@@ -67,3 +67,54 @@ def calculate_total_cost(graph, path_with_modes):
         if edge_data:
             total_cost += edge_data['weight']
     return total_cost
+
+def get_minimal_dist_matrix(graph, interested_nodes):
+    """
+    Constructs the distance matrix for TSP and captures all parent 
+    pointers for final path reconstruction.
+    """
+    min_dist_matrix = {}
+    all_parents = {} 
+
+    for node in interested_nodes:
+        min_costs, parents = djikstra(graph, node)
+        all_parents[node] = parents
+        min_dist_matrix[node] = {
+            n: min_costs[n] for n in interested_nodes if n in min_costs
+        }
+
+    return min_dist_matrix, all_parents
+
+def stitch_itinerary(optimized_order, all_parents):
+    """
+    Reconstructs the final itinerary including the mode of transport.
+    Returns a list of tuples: (node, mode_to_reach_node)
+    """
+    if not optimized_order:
+        return []
+
+    full_itinerary = []
+
+    for i in range(len(optimized_order) - 1):
+        start_node = optimized_order[i]
+        end_node = optimized_order[i+1]
+
+        parents = all_parents.get(start_node, {})
+        segment = []
+        curr = end_node
+
+        while curr is not None:
+            prev_node, mode = parents.get(curr, (None, None))
+            # We store the node and the mode used to arrive AT this node
+            segment.append((curr, mode))
+            curr = prev_node
+
+        segment.reverse()
+
+        if i == 0:
+            full_itinerary.extend(segment)
+        else:
+            # Skip the first element to avoid doubling up on the resort node
+            full_itinerary.extend(segment[1:])
+
+    return full_itinerary
