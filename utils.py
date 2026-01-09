@@ -36,3 +36,34 @@ def djikstra(graph, start):
                 heapq.heappush(queue, (new_cost, neighbor))
 
     return min_cost, best_path
+
+def reconstruct_path(best_path, start, end):
+    """
+    Reconstructs a single path.
+    """
+    path = []
+    curr = end
+    while curr is not None:
+        parent, mode = best_path.get(curr, (None, None))
+        path.append((curr, mode))
+        curr = parent
+
+    path.reverse()
+
+    if path and path[0][0] == start:
+        return path
+    return []
+
+def calculate_total_cost(graph, path_with_modes):
+    """
+    Calculates total time for a path of (node, mode) tuples.
+    """
+    total_cost = 0
+    for i in range(len(path_with_modes) - 1):
+        u = path_with_modes[i][0]
+        v = path_with_modes[i+1][0]
+        # Access weight from the nested dictionary structure
+        edge_data = graph.get(u, {}).get(v)
+        if edge_data:
+            total_cost += edge_data['weight']
+    return total_cost
