@@ -1,0 +1,716 @@
+{
+    "locations": [
+        "Ticket & Transportation Center - Resort Monorail",
+        "Disney's Polynesian Village Resort - Resort Monorail",
+        "Disney's Grand Floridian Resort & Spa - Resort Monorail",
+        "Magic Kingdom - Resort Monorail",
+        "Disney's Contemporary Resort - Resort Monorail",
+        "Ticket & Transportation Center - Express Monorail",
+        "Magic Kingdom - Express Monorail",
+        "Ticket & Transportation Center - Epcot Monorail",
+        "Epcot - Epcot Monorail",
+        "Ticket & Transportation Center - Ferry",
+        "Magic Kingdom",
+        "Disney's Polynesian Village - Gold Flag Launch",
+        "Magic Kingdom - Gold Flag Launch",
+        "Disney's Grand Floridian Resort & Spa - Gold Flag Launch",
+        "Magic Kingdom - Green Flag Launch",
+        "Disney's Fort Wilderness Resort & Campground - Green Flag Launch",
+        "Disney's Wilderness Lodge Resort - Red Flag Launch",
+        "Magic Kingdom - Red Flag Launch",
+        "Disney's Contemporary Resort - Blue Flag Launch",
+        "Disney's Fort Wilderness Resort & Campground - Blue Flag Launch",
+        "Disney's Wilderness Lodge Resort - Blue Flag Launch",
+        "Hollywood Studios - Crescent Lake Friendship Boat to Epcot",
+        "Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Epcot",
+        "Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Epcot",
+        "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Epcot",
+        "Epcot International Gateway - Crescent Lake Friendship Boat to Epcot",
+        "Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Hollywood Studios",
+        "Hollywood Studios - Crescent Lake Friendship Boat to Hollywood Studios",
+        "Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Hollywood Studios",
+        "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Hollywood Studios",
+        "Epcot International Gateway - Crescent Lake Friendship Boat to Hollywood Studios",
+        "Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat",
+        "Disney Springs Marketplace - Purple Flag Sassagoula River Ferry Boat",
+        "Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat",
+        "Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat",
+        "Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat",
+        "Disney Springs Landing - Blue Flag Sassagoula River Ferry Boat",
+        "Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat",
+        "Disney Springs Landing - Green Flag Sassagoula River Ferry Boat",
+        "Disney's Caribbean Beach Resort - Epcot Skyliner",
+        "Disney Vacation Club Riviera Resort - Epcot Skyliner",
+        "Epcot International Gateway - Epcot Skyliner",
+        "Hollywood Studios - Hollywood Studios Skyliner",
+        "Disney's Caribbean Beach Resort - Pop Century/Art of Animation Skyliner",
+        "Generation Gap Bridge - Pop Century/Art of Animation Skyliner",
+        "Ticket & Transportation Center",
+        "Disney's Polynesian Village Resort",
+        "Disney's Polynesian Village Resort - Gold Flag Launch",
+        "Disney's Grand Floridian Resort & Spa",
+        "Disney's Contemporary Resort",
+        "Contemporary Resort - Blue Flag Launch",
+        "Contemporary Resort",
+        "Disney's Fort Wilderness Resort & Campground",
+        "Fort Wilderness Resort & Campground",
+        "Disney's Wilderness Lodge Resort",
+        "Disney's Pop Century Resort",
+        "Disney's Art of Animation Resort",
+        "Disney's Caribbean Beach Resort",
+        "Disney's Caribbean Beach Resort - Hollywood Studios Skyliner",
+        "Disney Vacation Club Riviera Resort",
+        "Epcot International Gateway",
+        "Hollywood Studios"
+    ],
+    "paths": [
+        [
+            "Ticket & Transportation Center - Resort Monorail",
+            "Disney's Polynesian Village Resort - Resort Monorail",
+            4,
+            "Resort Monorail"
+        ],
+        [
+            "Disney's Polynesian Village Resort - Resort Monorail",
+            "Disney's Grand Floridian Resort & Spa - Resort Monorail",
+            4,
+            "Resort Monorail"
+        ],
+        [
+            "Disney's Grand Floridian Resort & Spa - Resort Monorail",
+            "Magic Kingdom - Resort Monorail",
+            4,
+            "Resort Monorail"
+        ],
+        [
+            "Magic Kingdom - Resort Monorail",
+            "Disney's Contemporary Resort - Resort Monorail",
+            4,
+            "Resort Monorail"
+        ],
+        [
+            "Disney's Contemporary Resort - Resort Monorail",
+            "Ticket & Transportation Center - Resort Monorail",
+            4,
+            "Resort Monorail"
+        ],
+        [
+            "Ticket & Transportation Center - Express Monorail",
+            "Magic Kingdom - Express Monorail",
+            7,
+            "Express Monorail"
+        ],
+        [
+            "Magic Kingdom - Express Monorail",
+            "Ticket & Transportation Center - Express Monorail",
+            5,
+            "Express Monorail"
+        ],
+        [
+            "Epcot - Epcot Monorail",
+            "Ticket & Transportation Center - Epcot Monorail",
+            10,
+            "Epcot Monorail"
+        ],
+        [
+            "Ticket & Transportation Center - Epcot Monorail",
+            "Epcot - Epcot Monorail",
+            10,
+            "Epcot Monorail"
+        ],
+        [
+            "Magic Kingdom",
+            "Ticket & Transportation Center - Ferry",
+            11,
+            "Ferry"
+        ],
+        [
+            "Ticket & Transportation Center - Ferry",
+            "Magic Kingdom",
+            11,
+            "Ferry"
+        ],
+        [
+            "Disney's Polynesian Village - Gold Flag Launch",
+            "Magic Kingdom - Gold Flag Launch",
+            7,
+            "Gold Flag Launch"
+        ],
+        [
+            "Disney's Grand Floridian Resort & Spa - Gold Flag Launch",
+            "Disney's Polynesian Village - Gold Flag Launch",
+            7,
+            "Gold Flag Launch"
+        ],
+        [
+            "Magic Kingdom - Gold Flag Launch",
+            "Disney's Grand Floridian Resort & Spa - Gold Flag Launch",
+            7,
+            "Gold Flag Launch"
+        ],
+        [
+            "Disney's Fort Wilderness Resort & Campground - Green Flag Launch",
+            "Magic Kingdom - Green Flag Launch",
+            15,
+            "Gold Flag Launch"
+        ],
+        [
+            "Magic Kingdom - Green Flag Launch",
+            "Disney's Fort Wilderness Resort & Campground - Green Flag Launch",
+            15,
+            "Gold Flag Launch"
+        ],
+        [
+            "Magic Kingdom - Red Flag Launch",
+            "Disney's Wilderness Lodge Resort - Red Flag Launch",
+            7,
+            "Red Flag Launch"
+        ],
+        [
+            "Disney's Wilderness Lodge Resort - Red Flag Launch",
+            "Magic Kingdom - Red Flag Launch",
+            7,
+            "Red Flag Launch"
+        ],
+        [
+            "Disney's Fort Wilderness Resort & Campground - Blue Flag Launch",
+            "Disney's Contemporary Resort - Blue Flag Launch",
+            7,
+            "Blue Flag Launch"
+        ],
+        [
+            "Disney's Contemporary Resort - Blue Flag Launch",
+            "Disney's Fort Wilderness Resort & Campground - Blue Flag Launch",
+            7,
+            "Blue Flag Launch"
+        ],
+        [
+            "Disney's Fort Wilderness Resort & Campground - Blue Flag Launch",
+            "Disney's Wilderness Lodge Resort - Blue Flag Launch",
+            7,
+            "Blue Flag Launch"
+        ],
+        [
+            "Disney's Wilderness Lodge Resort - Blue Flag Launch",
+            "Disney's Fort Wilderness Resort & Campground - Blue Flag Launch",
+            7,
+            "Blue Flag Launch"
+        ],
+        [
+            "Disney's Contemporary Resort - Blue Flag Launch",
+            "Disney's Wilderness Lodge Resort - Blue Flag Launch",
+            7,
+            "Blue Flag Launch"
+        ],
+        [
+            "Disney's Wilderness Lodge Resort - Blue Flag Launch",
+            "Disney's Contemporary Resort - Blue Flag Launch",
+            7,
+            "Blue Flag Launch"
+        ],
+        [
+            "Hollywood Studios - Crescent Lake Friendship Boat to Epcot",
+            "Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Epcot",
+            8,
+            "Crescent Lake Friendship Boat to Epcot"
+        ],
+        [
+            "Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Epcot",
+            "Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Epcot",
+            8,
+            "Crescent Lake Friendship Boat to Epcot"
+        ],
+        [
+            "Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Epcot",
+            "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Epcot",
+            8,
+            "Crescent Lake Friendship Boat to Epcot"
+        ],
+        [
+            "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Epcot",
+            "Epcot International Gateway - Crescent Lake Friendship Boat to Epcot",
+            8,
+            "Crescent Lake Friendship Boat to Epcot"
+        ],
+        [
+            "Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Hollywood Studios",
+            "Hollywood Studios - Crescent Lake Friendship Boat to Hollywood Studios",
+            8,
+            "Crescent Lake Friendship Boat to Hollywood Studios"
+        ],
+        [
+            "Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Hollywood Studios",
+            "Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Hollywood Studios",
+            8,
+            "Crescent Lake Friendship Boat to Hollywood Studios"
+        ],
+        [
+            "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Hollywood Studios",
+            "Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Hollywood Studios",
+            8,
+            "Crescent Lake Friendship Boat to Hollywood Studios"
+        ],
+        [
+            "Epcot International Gateway - Crescent Lake Friendship Boat to Hollywood Studios",
+            "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Hollywood Studios",
+            8,
+            "Crescent Lake Friendship Boat to Hollywood Studios"
+        ],
+        [
+            "Disney Springs Marketplace - Purple Flag Sassagoula River Ferry Boat",
+            "Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat",
+            20,
+            "Purple Flag Sassagoula River Ferry Boat"
+        ],
+        [
+            "Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat",
+            "Disney Springs Marketplace - Purple Flag Sassagoula River Ferry Boat",
+            20,
+            "Purple Flag Sassagoula River Ferry Boat"
+        ],
+        [
+            "Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat",
+            "Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat",
+            17,
+            "Yellow Flag Sassagoula River Ferry Boat"
+        ],
+        [
+            "Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat",
+            "Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat",
+            17,
+            "Yellow Flag Sassagoula River Ferry Boat"
+        ],
+        [
+            "Disney Springs Landing - Blue Flag Sassagoula River Ferry Boat",
+            "Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat",
+            15,
+            "Blue Flag Sassagoula River Ferry Boat"
+        ],
+        [
+            "Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat",
+            "Disney Springs Landing - Blue Flag Sassagoula River Ferry Boat",
+            15,
+            "Blue Flag Sassagoula River Ferry Boat"
+        ],
+        [
+            "Disney Springs Landing - Green Flag Sassagoula River Ferry Boat",
+            "Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat",
+            10,
+            "Green Flag Sassagoula River Ferry Boat"
+        ],
+        [
+            "Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat",
+            "Disney Springs Landing - Green Flag Sassagoula River Ferry Boat",
+            10,
+            "Green Flag Sassagoula River Ferry Boat"
+        ],
+        [
+            "Disney Vacation Club Riviera Resort - Epcot Skyliner",
+            "Disney's Caribbean Beach Resort - Epcot Skyliner",
+            4,
+            "Epcot Skyliner"
+        ],
+        [
+            "Disney's Caribbean Beach Resort - Epcot Skyliner",
+            "Disney Vacation Club Riviera Resort - Epcot Skyliner",
+            4,
+            "Epcot Skyliner"
+        ],
+        [
+            "Epcot International Gateway - Epcot Skyliner",
+            "Disney Vacation Club Riviera Resort - Epcot Skyliner",
+            10,
+            "Epcot Skyliner"
+        ],
+        [
+            "Disney Vacation Club Riviera Resort - Epcot Skyliner",
+            "Epcot International Gateway - Epcot Skyliner",
+            10,
+            "Epcot Skyliner"
+        ],
+        [
+            "Hollywood Studios - Hollywood Studios Skyliner",
+            "Disney's Caribbean Beach Resort - Epcot Skyliner",
+            10,
+            "Hollywood Studios Skyliner"
+        ],
+        [
+            "Disney's Caribbean Beach Resort - Epcot Skyliner",
+            "Hollywood Studios - Hollywood Studios Skyliner",
+            10,
+            "Hollywood Studios Skyliner"
+        ],
+        [
+            "Generation Gap Bridge - Pop Century/Art of Animation Skyliner",
+            "Disney's Caribbean Beach Resort - Pop Century/Art of Animation Skyliner",
+            5,
+            "Pop Century/Art of Animation Skyliner"
+        ],
+        [
+            "Disney's Caribbean Beach Resort - Pop Century/Art of Animation Skyliner",
+            "Generation Gap Bridge - Pop Century/Art of Animation Skyliner",
+            5,
+            "Pop Century/Art of Animation Skyliner"
+        ],
+        [
+            "Magic Kingdom",
+            "Magic Kingdom - Resort Monorail",
+            7,
+            "Walk"
+        ],
+        [
+            "Magic Kingdom - Resort Monorail",
+            "Magic Kingdom",
+            1,
+            "Walk"
+        ],
+        [
+            "Magic Kingdom",
+            "Magic Kingdom - Express Monorail",
+            7,
+            "Walk"
+        ],
+        [
+            "Magic Kingdom - Express Monorail",
+            "Magic Kingdom",
+            1,
+            "Walk"
+        ],
+        [
+            "Magic Kingdom",
+            "Magic Kingdom - Gold Flag Launch",
+            11,
+            "Walk"
+        ],
+        [
+            "Magic Kingdom - Gold Flag Launch",
+            "Magic Kingdom",
+            1,
+            "Walk"
+        ],
+        [
+            "Magic Kingdom",
+            "Magic Kingdom - Green Flag Launch",
+            15,
+            "Walk"
+        ],
+        [
+            "Magic Kingdom - Green Flag Launch",
+            "Magic Kingdom",
+            1,
+            "Walk"
+        ],
+        [
+            "Magic Kingdom",
+            "Magic Kingdom - Red Flag Launch",
+            20,
+            "Walk"
+        ],
+        [
+            "Magic Kingdom - Red Flag Launch",
+            "Magic Kingdom",
+            1,
+            "Walk"
+        ],
+        [
+            "Ticket & Transportation Center",
+            "Ticket & Transportation Center - Resort Monorail",
+            7,
+            "Walk"
+        ],
+        [
+            "Ticket & Transportation Center",
+            "Ticket & Transportation Center - Express Monorail",
+            7,
+            "Walk"
+        ],
+        [
+            "Ticket & Transportation Center",
+            "Ticket & Transportation Center - Epcot Monorail",
+            7,
+            "Walk"
+        ],
+        [
+            "Ticket & Transportation Center - Resort Monorail",
+            "Ticket & Transportation Center",
+            1,
+            "Walk"
+        ],
+        [
+            "Ticket & Transportation Center - Express Monorail",
+            "Ticket & Transportation Center",
+            1,
+            "Walk"
+        ],
+        [
+            "Ticket & Transportation Center - Epcot Monorail",
+            "Ticket & Transportation Center",
+            1,
+            "Walk"
+        ],
+        [
+            "Ticket & Transportation Center",
+            "Ticket & Transportation Center - Ferry",
+            11,
+            "Walk"
+        ],
+        [
+            "Ticket & Transportation Center - Ferry",
+            "Ticket & Transportation Center",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Polynesian Village Resort",
+            "Disney's Polynesian Village Resort - Resort Monorail",
+            7,
+            "Walk"
+        ],
+        [
+            "Disney's Polynesian Village Resort - Resort Monorail",
+            "Disney's Polynesian Village Resort",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Polynesian Village Resort",
+            "Disney's Polynesian Village Resort - Gold Flag Launch",
+            11,
+            "Walk"
+        ],
+        [
+            "Disney's Polynesian Village Resort - Gold Flag Launch",
+            "Disney's Polynesian Village Resort",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Grand Floridian Resort & Spa",
+            "Disney's Grand Floridian Resort & Spa - Resort Monorail",
+            7,
+            "Walk"
+        ],
+        [
+            "Disney's Grand Floridian Resort & Spa - Resort Monorail",
+            "Disney's Grand Floridian Resort & Spa",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Grand Floridian Resort & Spa",
+            "Disney's Grand Floridian Resort & Spa - Gold Flag Launch",
+            11,
+            "Walk"
+        ],
+        [
+            "Disney's Grand Floridian Resort & Spa - Gold Flag Launch",
+            "Disney's Grand Floridian Resort & Spa",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Contemporary Resort",
+            "Disney's Contemporary Resort - Resort Monorail",
+            7,
+            "Walk"
+        ],
+        [
+            "Disney's Contemporary Resort - Resort Monorail",
+            "Disney's Contemporary Resort",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Contemporary Resort",
+            "Contemporary Resort - Blue Flag Launch",
+            15,
+            "Walk"
+        ],
+        [
+            "Disney's Contemporary Resort - Blue Flag Launch",
+            "Contemporary Resort",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Fort Wilderness Resort & Campground",
+            "Disney's Fort Wilderness Resort & Campground - Green Flag Launch",
+            15,
+            "Walk"
+        ],
+        [
+            "Disney's Fort Wilderness Resort & Campground - Green Flag Launch",
+            "Disney's Fort Wilderness Resort & Campground",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Fort Wilderness Resort & Campground",
+            "Disney's Fort Wilderness Resort & Campground - Blue Flag Launch",
+            15,
+            "Walk"
+        ],
+        [
+            "Disney's Fort Wilderness Resort & Campground - Blue Flag Launch",
+            "Fort Wilderness Resort & Campground",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Wilderness Lodge Resort",
+            "Disney's Wilderness Lodge Resort - Red Flag Launch",
+            20,
+            "Walk"
+        ],
+        [
+            "Disney's Wilderness Lodge Resort - Red Flag Launch",
+            "Disney's Wilderness Lodge Resort",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Wilderness Lodge Resort",
+            "Disney's Wilderness Lodge Resort - Red Flag Launch",
+            20,
+            "Walk"
+        ],
+        [
+            "Disney's Wilderness Lodge Resort - Red Flag Launch",
+            "Disney's Wilderness Lodge Resort",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Wilderness Lodge Resort",
+            "Disney's Wilderness Lodge Resort - Blue Flag Launch",
+            15,
+            "Walk"
+        ],
+        [
+            "Disney's Wilderness Lodge Resort - Blue Flag Launch",
+            "Disney's Wilderness Lodge Resort",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Pop Century Resort",
+            "Generation Gap Bridge - Pop Century/Art of Animation Skyliner",
+            10,
+            "Walk"
+        ],
+        [
+            "Generation Gap Bridge - Pop Century/Art of Animation Skyliner",
+            "Disney's Pop Century Resort",
+            10,
+            "Walk"
+        ],
+        [
+            "Disney's Art of Animation Resort",
+            "Generation Gap Bridge - Pop Century/Art of Animation Skyliner",
+            10,
+            "Walk"
+        ],
+        [
+            "Generation Gap Bridge - Pop Century/Art of Animation Skyliner",
+            "Disney's Art of Animation Resort",
+            10,
+            "Walk"
+        ],
+        [
+            "Disney's Caribbean Beach Resort - Epcot Skyliner",
+            "Disney's Caribbean Beach Resort",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Caribbean Beach Resort",
+            "Disney's Caribbean Beach Resort - Epcot Skyliner",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Caribbean Beach Resort - Hollywood Studios Skyliner",
+            "Disney's Caribbean Beach Resort",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Caribbean Beach Resort",
+            "Disney's Caribbean Beach Resort - Hollywood Studios Skyliner",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Caribbean Beach Resort - Pop Century/Art of Animation Skyliner",
+            "Disney's Caribbean Beach Resort",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney's Caribbean Beach Resort",
+            "Disney's Caribbean Beach Resort - Pop Century/Art of Animation Skyliner",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney Vacation Club Riviera Resort - Epcot Skyliner",
+            "Disney Vacation Club Riviera Resort",
+            1,
+            "Walk"
+        ],
+        [
+            "Disney Vacation Club Riviera Resort",
+            "Disney Vacation Club Riviera Resort - Epcot Skyliner",
+            1,
+            "Walk"
+        ],
+        [
+            "Epcot - Epcot Monorail",
+            "Epcot International Gateway",
+            25,
+            "Walk"
+        ],
+        [
+            "Epcot International Gateway",
+            "Epcot - Epcot Monorail",
+            25,
+            "Walk"
+        ],
+        [
+            "Epcot International Gateway - Epcot Skyliner",
+            "Epcot International Gateway",
+            1,
+            "Walk"
+        ],
+        [
+            "Epcot International Gateway",
+            "Epcot International Gateway - Epcot Skyliner",
+            1,
+            "Walk"
+        ],
+        [
+            "Epcot International Gateway - Crescent Lake Friendship Boat to Epcot",
+            "Epcot International Gateway",
+            1,
+            "Walk"
+        ],
+        [
+            "Epcot International Gateway",
+            "Epcot International Gateway - Crescent Lake Friendship Boat to Hollywood Studios",
+            7,
+            "Walk"
+        ],
+        [
+            "Hollywood Studios",
+            "Hollywood Studios - Crescent Lake Friendship Boat to Epcot",
+            7,
+            "Walk"
+        ],
+        [
+            "Hollywood Studios - Crescent Lake Friendship Boat to Hollywood Studios",
+            "Hollywood Studios",
+            1,
+            "Walk"
+        ]
+    ]
+}
