@@ -17,6 +17,10 @@ from app.core.config import settings
 class GraphManager:
     def __init__(self):
         self.display_names, self.graph = self._load_data()
+        self.valid_stops = {
+            name: loc_id for name, loc_id in self.display_names.items() 
+            if loc_id.endswith("_MAIN")
+        }
 
     def _load_data(self):
         """Loads graph and display names from the specified JSON file."""
