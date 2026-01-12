@@ -3,7 +3,7 @@ Project Name: WDW-Transit-Optimizer
 File Name: data_converter.py
 Description: Data JSON generation and conversion utility.
 Author: Joseph Lefkovitz (github.com/lefkovitzj)
-Last Modified: 1/9/2026
+Last Modified: 1/12/2026
 """
 
 import json
@@ -23,7 +23,7 @@ boats = [
     ("Disney's Polynesian Village Resort - Gold Flag Launch", "Magic Kingdom - Gold Flag Launch", 7, "Gold Flag Launch", False),
     ("Disney's Grand Floridian Resort & Spa - Gold Flag Launch", "Disney's Polynesian Village Resort - Gold Flag Launch", 7, "Gold Flag Launch", False),
     ("Magic Kingdom - Gold Flag Launch", "Disney's Grand Floridian Resort & Spa - Gold Flag Launch", 7, "Gold Flag Launch", False),
-    ("Magic Kingdom - Green Flag Launch", "Disney's Fort Wilderness Resort & Campground - Green Flag Launch", 15, "Gold Flag Launch", True),
+    ("Magic Kingdom - Green Flag Launch", "Disney's Fort Wilderness Resort & Campground - Green Flag Launch", 15, "Green Flag Launch", True),
     ("Disney's Wilderness Lodge Resort - Red Flag Launch", "Magic Kingdom - Red Flag Launch", 7, "Red Flag Launch", True),
     ("Disney's Contemporary Resort - Blue Flag Launch", "Disney's Fort Wilderness Resort & Campground - Blue Flag Launch", 7, "Blue Flag Launch", True),
     ("Disney's Wilderness Lodge Resort - Blue Flag Launch", "Disney's Fort Wilderness Resort & Campground - Blue Flag Launch", 7, "Blue Flag Launch", True),
@@ -142,7 +142,13 @@ def clean_id(name):
     if "Express Monorail" in name: return f"{base_id}_MONO_E"
     if "Epcot Monorail" in name: return f"{base_id}_MONO_EP"
     if "Skyliner" in name: return f"{base_id}_SKY"
-    if "Launch" in name or "Boat" in name or "Ferry" in name: return f"{base_id}_BOAT"
+    boat_colors = ["Gold", "Green", "Red", "Blue", "Purple", "Yellow"]
+    if "Launch" in name or "Boat" in name or "Ferry" in name: 
+        boat_ext = ""
+        for boat_color in boat_colors:
+            if boat_color in name:
+                boat_ext = f"_{boat_color.upper()}"
+        return f"{base_id}_BOAT{boat_ext}"
 
     return base_id
 

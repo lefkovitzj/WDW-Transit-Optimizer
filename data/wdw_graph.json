@@ -11,16 +11,16 @@
     "Epcot - Epcot Monorail": "EP_MAIN_MONO_EP",
     "Ticket & Transportation Center - Ferry": "TTC_MAIN_BOAT",
     "Magic Kingdom": "MK_MAIN",
-    "Disney's Polynesian Village Resort - Gold Flag Launch": "POLY_MAIN_BOAT",
-    "Magic Kingdom - Gold Flag Launch": "MK_MAIN_BOAT",
-    "Disney's Grand Floridian Resort & Spa - Gold Flag Launch": "GF_MAIN_BOAT",
-    "Magic Kingdom - Green Flag Launch": "MK_MAIN_BOAT",
-    "Disney's Fort Wilderness Resort & Campground - Green Flag Launch": "FTW_MAIN_BOAT",
-    "Disney's Wilderness Lodge Resort - Red Flag Launch": "WL_MAIN_BOAT",
-    "Magic Kingdom - Red Flag Launch": "MK_MAIN_BOAT",
-    "Disney's Contemporary Resort - Blue Flag Launch": "CONT_MAIN_BOAT",
-    "Disney's Fort Wilderness Resort & Campground - Blue Flag Launch": "FTW_MAIN_BOAT",
-    "Disney's Wilderness Lodge Resort - Blue Flag Launch": "WL_MAIN_BOAT",
+    "Disney's Polynesian Village Resort - Gold Flag Launch": "POLY_MAIN_BOAT_GOLD",
+    "Magic Kingdom - Gold Flag Launch": "MK_MAIN_BOAT_GOLD",
+    "Disney's Grand Floridian Resort & Spa - Gold Flag Launch": "GF_MAIN_BOAT_GOLD",
+    "Magic Kingdom - Green Flag Launch": "MK_MAIN_BOAT_GREEN",
+    "Disney's Fort Wilderness Resort & Campground - Green Flag Launch": "FTW_MAIN_BOAT_GREEN",
+    "Disney's Wilderness Lodge Resort - Red Flag Launch": "WL_MAIN_BOAT_RED",
+    "Magic Kingdom - Red Flag Launch": "MK_MAIN_BOAT_RED",
+    "Disney's Contemporary Resort - Blue Flag Launch": "CONT_MAIN_BOAT_BLUE",
+    "Disney's Fort Wilderness Resort & Campground - Blue Flag Launch": "FTW_MAIN_BOAT_BLUE",
+    "Disney's Wilderness Lodge Resort - Blue Flag Launch": "WL_MAIN_BOAT_BLUE",
     "Hollywood Studios - Crescent Lake Friendship Boat to Epcot": "HS_MAIN_BOAT",
     "Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Epcot": "SND_MAIN_BOAT",
     "Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Epcot": "YBC_MAIN_BOAT",
@@ -29,10 +29,10 @@
     "Hollywood Studios - Crescent Lake Friendship Boat to Hollywood Studios": "HS_MAIN_BOAT",
     "Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Hollywood Studios": "YBC_MAIN_BOAT",
     "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Hollywood Studios": "BWI_MAIN_BOAT",
-    "Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat": "POFQ_MAIN_BOAT",
-    "Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat": "POR_MAIN_BOAT",
-    "Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat": "SSR_MAIN_BOAT",
-    "Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat": "OKW_MAIN_BOAT",
+    "Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat": "POFQ_MAIN_BOAT_PURPLE",
+    "Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat": "POR_MAIN_BOAT_YELLOW",
+    "Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat": "SSR_MAIN_BOAT_BLUE",
+    "Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat": "OKW_MAIN_BOAT_GREEN",
     "Disney's Caribbean Beach Resort - Epcot Skyliner": "CBR_MAIN_SKY",
     "Disney Vacation Club Riviera Resort - Epcot Skyliner": "RIV_MAIN_SKY",
     "Hollywood Studios - Hollywood Studios Skyliner": "HS_MAIN_SKY",
@@ -117,57 +117,57 @@
       "bidirectional": true
     },
     {
-      "from": "POLY_MAIN_BOAT",
-      "to": "MK_MAIN_BOAT",
+      "from": "POLY_MAIN_BOAT_GOLD",
+      "to": "MK_MAIN_BOAT_GOLD",
       "weight": 7,
       "mode": "Gold Flag Launch",
       "bidirectional": false
     },
     {
-      "from": "GF_MAIN_BOAT",
-      "to": "POLY_MAIN_BOAT",
+      "from": "GF_MAIN_BOAT_GOLD",
+      "to": "POLY_MAIN_BOAT_GOLD",
       "weight": 7,
       "mode": "Gold Flag Launch",
       "bidirectional": false
     },
     {
-      "from": "MK_MAIN_BOAT",
-      "to": "GF_MAIN_BOAT",
+      "from": "MK_MAIN_BOAT_GOLD",
+      "to": "GF_MAIN_BOAT_GOLD",
       "weight": 7,
       "mode": "Gold Flag Launch",
       "bidirectional": false
     },
     {
-      "from": "MK_MAIN_BOAT",
-      "to": "FTW_MAIN_BOAT",
+      "from": "MK_MAIN_BOAT_GREEN",
+      "to": "FTW_MAIN_BOAT_GREEN",
       "weight": 15,
-      "mode": "Gold Flag Launch",
+      "mode": "Green Flag Launch",
       "bidirectional": true
     },
     {
-      "from": "WL_MAIN_BOAT",
-      "to": "MK_MAIN_BOAT",
+      "from": "WL_MAIN_BOAT_RED",
+      "to": "MK_MAIN_BOAT_RED",
       "weight": 7,
       "mode": "Red Flag Launch",
       "bidirectional": true
     },
     {
-      "from": "CONT_MAIN_BOAT",
-      "to": "FTW_MAIN_BOAT",
+      "from": "CONT_MAIN_BOAT_BLUE",
+      "to": "FTW_MAIN_BOAT_BLUE",
       "weight": 7,
       "mode": "Blue Flag Launch",
       "bidirectional": true
     },
     {
-      "from": "WL_MAIN_BOAT",
-      "to": "FTW_MAIN_BOAT",
+      "from": "WL_MAIN_BOAT_BLUE",
+      "to": "FTW_MAIN_BOAT_BLUE",
       "weight": 7,
       "mode": "Blue Flag Launch",
       "bidirectional": true
     },
     {
-      "from": "WL_MAIN_BOAT",
-      "to": "CONT_MAIN_BOAT",
+      "from": "WL_MAIN_BOAT_BLUE",
+      "to": "CONT_MAIN_BOAT_BLUE",
       "weight": 7,
       "mode": "Blue Flag Launch",
       "bidirectional": true
@@ -229,29 +229,29 @@
       "bidirectional": false
     },
     {
-      "from": "POFQ_MAIN_BOAT",
-      "to": "DS_MARKET_BOAT",
+      "from": "POFQ_MAIN_BOAT_PURPLE",
+      "to": "DS_MARKET_BOAT_PURPLE",
       "weight": 20,
       "mode": "Purple Flag Sassagoula River Ferry Boat",
       "bidirectional": true
     },
     {
-      "from": "POR_MAIN_BOAT",
-      "to": "DS_MARKET_BOAT",
+      "from": "POR_MAIN_BOAT_YELLOW",
+      "to": "DS_MARKET_BOAT_YELLOW",
       "weight": 17,
       "mode": "Yellow Flag Sassagoula River Ferry Boat",
       "bidirectional": true
     },
     {
-      "from": "SSR_MAIN_BOAT",
-      "to": "DS_LANDING_BOAT",
+      "from": "SSR_MAIN_BOAT_BLUE",
+      "to": "DS_LANDING_BOAT_BLUE",
       "weight": 15,
       "mode": "Blue Flag Sassagoula River Ferry Boat",
       "bidirectional": true
     },
     {
-      "from": "OKW_MAIN_BOAT",
-      "to": "DS_LANDING_BOAT",
+      "from": "OKW_MAIN_BOAT_GREEN",
+      "to": "DS_LANDING_BOAT_GREEN",
       "weight": 10,
       "mode": "Green Flag Sassagoula River Ferry Boat",
       "bidirectional": true
@@ -314,13 +314,13 @@
     },
     {
       "from": "MK_MAIN",
-      "to": "MK_MAIN_BOAT",
+      "to": "MK_MAIN_BOAT_GOLD",
       "weight": 11,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "MK_MAIN_BOAT",
+      "from": "MK_MAIN_BOAT_GOLD",
       "to": "MK_MAIN",
       "weight": 1,
       "mode": "Walk",
@@ -328,13 +328,13 @@
     },
     {
       "from": "MK_MAIN",
-      "to": "MK_MAIN_BOAT",
+      "to": "MK_MAIN_BOAT_GREEN",
       "weight": 15,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "MK_MAIN_BOAT",
+      "from": "MK_MAIN_BOAT_GREEN",
       "to": "MK_MAIN",
       "weight": 1,
       "mode": "Walk",
@@ -342,13 +342,13 @@
     },
     {
       "from": "MK_MAIN",
-      "to": "MK_MAIN_BOAT",
+      "to": "MK_MAIN_BOAT_RED",
       "weight": 20,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "MK_MAIN_BOAT",
+      "from": "MK_MAIN_BOAT_RED",
       "to": "MK_MAIN",
       "weight": 1,
       "mode": "Walk",
@@ -426,13 +426,13 @@
     },
     {
       "from": "POLY_MAIN",
-      "to": "POLY_MAIN_BOAT",
+      "to": "POLY_MAIN_BOAT_GOLD",
       "weight": 11,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "POLY_MAIN_BOAT",
+      "from": "POLY_MAIN_BOAT_GOLD",
       "to": "POLY_MAIN",
       "weight": 1,
       "mode": "Walk",
@@ -454,13 +454,13 @@
     },
     {
       "from": "GF_MAIN",
-      "to": "GF_MAIN_BOAT",
+      "to": "GF_MAIN_BOAT_GOLD",
       "weight": 11,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "GF_MAIN_BOAT",
+      "from": "GF_MAIN_BOAT_GOLD",
       "to": "GF_MAIN",
       "weight": 1,
       "mode": "Walk",
@@ -482,13 +482,13 @@
     },
     {
       "from": "CONT_MAIN",
-      "to": "CONT_MAIN_BOAT",
+      "to": "CONT_MAIN_BOAT_BLUE",
       "weight": 15,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "CONT_MAIN_BOAT",
+      "from": "CONT_MAIN_BOAT_BLUE",
       "to": "CONT_MAIN",
       "weight": 1,
       "mode": "Walk",
@@ -496,13 +496,13 @@
     },
     {
       "from": "FTW_MAIN",
-      "to": "FTW_MAIN_BOAT",
+      "to": "FTW_MAIN_BOAT_GREEN",
       "weight": 15,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "FTW_MAIN_BOAT",
+      "from": "FTW_MAIN_BOAT_GREEN",
       "to": "FTW_MAIN",
       "weight": 1,
       "mode": "Walk",
@@ -510,13 +510,13 @@
     },
     {
       "from": "FTW_MAIN",
-      "to": "FTW_MAIN_BOAT",
+      "to": "FTW_MAIN_BOAT_BLUE",
       "weight": 15,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "FTW_MAIN_BOAT",
+      "from": "FTW_MAIN_BOAT_BLUE",
       "to": "FTW_MAIN",
       "weight": 1,
       "mode": "Walk",
@@ -524,13 +524,13 @@
     },
     {
       "from": "WL_MAIN",
-      "to": "WL_MAIN_BOAT",
+      "to": "WL_MAIN_BOAT_RED",
       "weight": 20,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "WL_MAIN_BOAT",
+      "from": "WL_MAIN_BOAT_RED",
       "to": "WL_MAIN",
       "weight": 1,
       "mode": "Walk",
@@ -538,13 +538,13 @@
     },
     {
       "from": "WL_MAIN",
-      "to": "WL_MAIN_BOAT",
+      "to": "WL_MAIN_BOAT_BLUE",
       "weight": 15,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "WL_MAIN_BOAT",
+      "from": "WL_MAIN_BOAT_BLUE",
       "to": "WL_MAIN",
       "weight": 1,
       "mode": "Walk",
@@ -636,13 +636,13 @@
     },
     {
       "from": "OKW_MAIN",
-      "to": "OKW_MAIN_BOAT",
+      "to": "OKW_MAIN_BOAT_GREEN",
       "weight": 10,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "OKW_MAIN_BOAT",
+      "from": "OKW_MAIN_BOAT_GREEN",
       "to": "OKW_MAIN",
       "weight": 1,
       "mode": "Walk",
