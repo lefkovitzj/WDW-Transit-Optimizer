@@ -21,6 +21,7 @@ router = APIRouter()
 templates = Jinja2Templates(directory="app/templates")
 
 def get_graph(request: Request):
+    """ Graph state dependency. """
     return request.app.state.graph
 
 @router.get("/", response_class=HTMLResponse)
@@ -54,12 +55,13 @@ async def plan_route(
     stops: List[str] = Form([]),
     graph=Depends(get_graph)
 ):
+    """ Use custom TSP and Djikstra's logic to plan an optimized route. """
     # Filter out empty stops
     valid_stops = [s for s in stops if s.strip()]
-    
+
     # Run the TSP/Dijkstra logic
     result = graph.plan_itinerary(start, end, valid_stops)
-    
+
     # Check if this is an HTMX request
     inverted_display_names = {v: k for k, v in graph.display_names.items()}
     if request.headers.get("HX-Request"):
@@ -69,7 +71,7 @@ async def plan_route(
             "result": result,
             "display_names": inverted_display_names
         })
-    
+
     # Fallback for full page reload
     return templates.TemplateResponse("pages/index.html", {
         "request": request,
