@@ -40,6 +40,9 @@ boats = [
     ("Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat", "Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", 17, "Yellow Flag Sassagoula River Ferry Boat", True),
     ("Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", "Disney Springs Landing - Blue Flag Sassagoula River Ferry Boat", 15, "Blue Flag Sassagoula River Ferry Boat", True),
     ("Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat", "Disney Springs Landing - Green Flag Sassagoula River Ferry Boat", 10, "Green Flag Sassagoula River Ferry Boat", True),
+    ("Disney Springs Landing - Red Flag Ferry Boat", "Disney Springs West Side - Red Flag Ferry Boat", 6, "Walk", False),
+    ("Disney Springs West Side - Red Flag Ferry Boat", "Disney Springs Marketplace - Red Flag Ferry Boat", 6, "Walk", False),
+    ("Disney Springs Marketplace - Red Flag Ferry Boat", "Disney Springs Landing - Red Flag Ferry Boat", 6, "Walk", False),
 ]
 skyliners = [
     ("Disney's Caribbean Beach Resort - Epcot Skyliner", "Disney Vacation Club Riviera Resort - Epcot Skyliner", 4, "Epcot Skyliner", True),
@@ -100,11 +103,47 @@ walks = [
     ("Hollywood Studios - Crescent Lake Friendship Boat to Hollywood Studios", "Hollywood Studios", 1, "Walk", False),
     ("Disney's Old Key West Resort", "Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat", 10, "Walk", False),
     ("Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat", "Disney's Old Key West Resort", 1, "Walk", False),
+    
+    ("Disney Springs Marketplace", "Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", 20, "Walk", False),
+    ("Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", "Disney Springs Marketplace", 1, "Walk", False),
+    ("Disney Springs Marketplace", "Disney Springs Marketplace - Purple Flag Sassagoula River Ferry Boat", 20, "Walk", False),
+    ("Disney Springs Marketplace - Purple Flag Sassagoula River Ferry Boat", "Disney Springs Marketplace", 1, "Walk", False),
+    ("Disney Springs Landing", "Disney Springs Landing - Blue Flag Sassagoula River Ferry Boat", 20, "Walk", False),
+    ("Disney Springs Landing - Blue Flag Sassagoula River Ferry Boat", "Disney Springs Landing", 1, "Walk", False),
+    ("Disney Springs Landing", "Disney Springs Landing - Green Flag Sassagoula River Ferry Boat", 20, "Walk", False),
+    ("Disney Springs Landing - Green Flag Sassagoula River Ferry Boat", "Disney Springs Landing", 1, "Walk", False),
+
+    ("Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat", "Disney's Old Key West Resort", 1, "Walk", False),
+    ("Disney's Old Key West Resort", "Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat", 20, "Walk", False),
+    ("Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", "Disney's Saratogoa Springs Resort and Tree Houses", 1, "Walk", False),
+    ("Disney's Saratogoa Springs Resort and Tree Houses", "Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", 20, "Walk", False),
+    ("Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat", "Disney's Port Orleans Riverside Resort", 1, "Walk", False),
+    ("Disney's Port Orleans Riverside Resort", "Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat", 20, "Walk", False),
+    ("Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat", "Disney's Port Orleans French Quarter Resort", 1, "Walk", False),
+    ("Disney's Port Orleans French Quarter Resort", "Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat", 20, "Walk", False),
+
+    ("Disney Springs Landing - Blue Flag Sassagoula River Ferry Boat", "Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", 8, "Walk", False),
+    ("Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", "Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat", 8, "Walk", False),
+    ("Disney Springs Marketplace - Purple Flag Sassagoula River Ferry Boat", "Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat", 8, "Walk", False),
+    
+    ("Disney Springs Landing", "Disney Springs Landing - Red Flag Ferry Boat", 20, "Walk", False),
+    ("Disney Springs West Side", "Disney Springs West Side - Red Flag Ferry Boat", 20, "Walk", False),
+    ("Disney Springs Marketplace", "Disney Springs Marketplace - Red Flag Ferry Boat", 20, "Walk", False),
+    ("Disney Springs Landing - Red Flag Ferry Boat", "Disney Springs Landing", 1, "Walk", False),
+    ("Disney Springs West Side - Red Flag Ferry Boat", "Disney Springs West Side", 1, "Walk", False),
+    ("Disney Springs Marketplace - Red Flag Ferry Boat", "Disney Springs Marketplace", 1, "Walk", False),
+
+    ("Disney Springs West Side", "Disney Springs", 10, "Walk", True),
+    ("Disney Springs Landing", "Disney Springs", 10, "Walk", True),
+    ("Disney Springs Marketplace", "Disney Springs", 10, "Walk", True),
+]
+bus_only = [
+    "Disney's Animal Kingdom Lodge Resort",
+    "Disney's All-Star Movies Resort",
+    "Disney's All-Star Music Resort",
 ]
 
-def clean_id(name):
-    """Maps long strings to standardized Sub-node IDs."""
-    mapping = {
+mapping = {
         "Magic Kingdom": "MK_MAIN",
         "Epcot": "EP_MAIN",
         "Hollywood Studios": "HS_MAIN",
@@ -125,11 +164,62 @@ def clean_id(name):
         "Generation Gap Bridge": "GGB_MAIN",
         "Disney Springs Marketplace": "DS_MARKET",
         "Disney Springs Landing": "DS_LANDING",
+        "Disney Springs West Side": "DS_WEST",
         "Disney's Port Orleans French Quarter Resort": "POFQ_MAIN",
         "Disney's Port Orleans Riverside Resort": "POR_MAIN",
-        "Disney's Saratogoa Springs Resort and Tree Houses": "SSR_MAIN",
-        "Disney's Old Key West Resort": "OKW_MAIN"
+        "Disney's Saratoga Springs Resort and Tree Houses": "SSR_MAIN",
+        "Disney's Old Key West Resort": "OKW_MAIN",
+        "Disney's Animal Kingdom Lodge Resort": "AKL_MAIN",
+        "Disney's All-Star Movies Resort": "AS_MOVIE_MAIN",
+        "Disney's All-Star Music Resort": "AS_MUSIC_MAIN",
+        "Disney Springs": "DS_MAIN",
+        "Animal Kingdom": "AK_MAIN",
     }
+
+no_bus_nodes = [
+    # Resorts with direct monorail and/or boat connections to Magic Kingdom & Epcot, so no busses offered to Magic Kingdom and/or Epcot from these resorts.
+    ("Disney's Polynesian Village Resort", "Magic Kingdom"),
+    ("Disney's Polynesian Village Resort", "Epcot"),
+    ("Disney's Grand Floridian Resort & Spa", "Magic Kingdom"),
+    ("Disney's Grand Floridian Resort & Spa", "Epcot"),
+    ("Disney's Contemporary Resort", "Magic Kingdom"),
+    ("Disney's Contemporary Resort", "Epcot"),
+    # Resorts with direct boat connections to Magic Kingdom, so no busses offered to Magic Kingdom from these resorts.
+    ("Disney's Fort Wilderness Resort & Campground", "Magic Kingdom"),
+    ("Disney's Wilderness Lodge Resort", "Magic Kingdom"),
+    # Skyliner connections are premium transit, so no busses offered from these resorts to the parks they connect to.
+    ("Disney's Caribbean Beach Resort", "Epcot"),
+    ("Disney's Caribbean Beach Resort", "Hollywood Studios"),
+    ("Disney Vacation Club Riviera Resort", "Epcot"),
+    ("Disney Vacation Club Riviera Resort", "Hollywood Studios"),
+    ("Disney's Pop Century Resort", "Epcot"),
+    ("Disney's Art of Animation Resort", "Epcot"),
+    ("Disney's Pop Century Resort", "Hollywood Studios"),
+    ("Disney's Art of Animation Resort", "Hollywood Studios"),
+    # Epcot Friendship Boats are premium transit, so no busses offered from these resorts to Epcot or Hollywood Studios.
+    ("Swan and Dolphin Hotel", "Epcot"),
+    ("Swan and Dolphin Hotel", "Hollywood Studios"),
+    ("Disney's Yacht and Beach Club Resorts", "Epcot"),
+    ("Disney's Yacht and Beach Club Resorts", "Hollywood Studios"),
+    ("Disney's Boardwalk Inn", "Epcot"),
+    ("Disney's Boardwalk Inn", "Hollywood Studios"),
+    # Disney Springs resorts have direct boat connections to Disney Springs, so no busses offered from these resorts to Disney Springs.
+    ("Disney's Port Orleans French Quarter Resort", "Disney Springs"),
+    ("Disney's Port Orleans Riverside Resort", "Disney Springs"),
+    ("Disney's Saratoga Springs Resort and Tree Houses", "Disney Springs"),
+    ("Disney's Old Key West Resort", "Disney Springs"),
+]
+
+def lookup_id(id, mapping=mapping):
+    """Helper function to map ID to long strings."""
+    for name, mapped_id in mapping.items():
+        if mapped_id == id:
+            return name
+    return id
+
+
+def clean_id(name, mapping=mapping):
+    """Maps long strings to standardized Sub-node IDs."""
 
     # Check for direct matches first
     if name in mapping: return mapping[name]
@@ -152,32 +242,16 @@ def clean_id(name):
 
     return base_id
 
-def has_premium_transit(resort_id, park_id, connections):
-    """Checks if a non-bus connection exists between a resort and park area."""
-    r_pref = resort_id.split('_')[0]
-    p_pref = park_id.split('_')[0]
+def has_premium_transit(resort_id, park_id, connections, no_bus_nodes=no_bus_nodes, mapping=mapping, display_names={}):
+    """Checks if the resort has any incident premium-transit edge."""
+    display_names.update(mapping)
+    reverse_display_names = {v: k for k, v in display_names.items()}
 
-    # Define common gateway nodes for parks
-    park_gateways = {
-        "MK": ["MK_MONO_R", "MK_MONO_E", "MK_BOAT"],
-        "EP": ["EP_MONO_EP", "EP_IG", "EP_SKY"],
-        "HS": ["HS_SKY", "HS_BOAT"]
-    }
-
-    targets = park_gateways.get(p_pref, [f"{p_pref}_MAIN"])
-
-    for conn in connections:
-        f, t = conn['from'], conn['to']
-        if r_pref in f or r_pref in t:
-            if any(gate in f or gate in t for gate in targets):
-                if conn['mode'] in [
-                        "Resort Monorail",
-                        "Epcot Monorail",
-                        "Skyliner",
-                        "Boat",
-                        "Ferry"]:
-                    print(f"{resort_id} has premium transit to {park_id}")
-                    return True
+    park_name = reverse_display_names[park_id]
+    resort_name = reverse_display_names[resort_id]
+    if (resort_name, park_name) in no_bus_nodes:
+        print(f"  No bus offered from {resort_name} to {park_name} due to direct transit connection.")
+        return True
     return False
 
 def generate_busses(final_data):
@@ -201,7 +275,7 @@ def generate_busses(final_data):
             # No busses offered from resorts to this hub (TTC).
             if not weight:
                 pass
-            elif not has_premium_transit(resort, hub, final_data["connections"]):
+            elif not has_premium_transit(resort, hub, final_data["connections"], no_bus_nodes=no_bus_nodes, display_names=display_names):
                 hub_bus = hub.replace("_MAIN", "_BUS")
                 bus_connections.append({
                     "from": resort_bus, "to": hub_bus, "weight": 20, "mode": "Bus", "bidirectional": True
@@ -224,7 +298,7 @@ def generate_busses(final_data):
     for i, park_a in enumerate(parks):
         for park_b in parks[i+1:]:
             # Parks are always connected to each other by bus (or other modes handled elsewhere)
-            if not has_premium_transit(park_a, park_b, final_data["connections"]):
+            if not has_premium_transit(park_a, park_b, final_data["connections"], no_bus_nodes=no_bus_nodes, display_names=display_names):
                 bus_connections.append({
                     "from": park_a.replace("_MAIN", "_BUS"), 
                     "to": park_b.replace("_MAIN", "_BUS"), 
@@ -233,7 +307,7 @@ def generate_busses(final_data):
 
     return bus_connections
 
-def convert_to_json(all_raw_data):
+def convert_to_json(all_raw_data, bus_only=[]):
     """ Convert existing data and generate busses into one dictionary. """
     connections = []
     display_names = {}
@@ -254,17 +328,20 @@ def convert_to_json(all_raw_data):
                 "mode": mode,
                 "bidirectional": bidirectional
             })
-
+    
+    for bus_only_u in bus_only:
+        bus_id = clean_id(bus_only_u)
+        display_names[bus_only_u] = bus_id
     all_transport = {"display_names": display_names, "connections": connections}
     all_transport["connections"].extend(generate_busses(all_transport))
     return all_transport
 
 if __name__ == "__main__":
     # Run the script
-    final_data = convert_to_json([monorails, boats, skyliners, walks])
+    final_data = convert_to_json([monorails, boats, skyliners, walks], bus_only)
 
     # Output to file
-    with open('wdw_graph.json', 'w') as f:
+    with open('data/wdw_graph.json', 'w') as f:
         json.dump(final_data, f, indent=2)
 
     print(f"Successfully converted {len(final_data['connections'])} connections.")

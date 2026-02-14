@@ -31,7 +31,6 @@
     "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Hollywood Studios": "BWI_MAIN_BOAT",
     "Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat": "POFQ_MAIN_BOAT_PURPLE",
     "Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat": "POR_MAIN_BOAT_YELLOW",
-    "Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat": "SSR_MAIN_BOAT_BLUE",
     "Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat": "OKW_MAIN_BOAT_GREEN",
     "Disney's Caribbean Beach Resort - Epcot Skyliner": "CBR_MAIN_SKY",
     "Disney Vacation Club Riviera Resort - Epcot Skyliner": "RIV_MAIN_SKY",
@@ -50,7 +49,24 @@
     "Disney's Caribbean Beach Resort - Hollywood Studios Skyliner": "CBR_MAIN_SKY",
     "Disney Vacation Club Riviera Resort": "RIV_MAIN",
     "Hollywood Studios": "HS_MAIN",
-    "Disney's Old Key West Resort": "OKW_MAIN"
+    "Disney's Old Key West Resort": "OKW_MAIN",
+    "Disney's Port Orleans Riverside Resort": "POR_MAIN",
+    "Disney's Port Orleans French Quarter Resort": "POFQ_MAIN",
+    "Disney Springs": "DS_MAIN",
+    "Disney's Animal Kingdom Lodge Resort": "AKL_MAIN",
+    "Disney's All-Star Movies Resort": "AS_MOVIE_MAIN",
+    "Disney's All-Star Music Resort": "AS_MUSIC_MAIN",
+    "Epcot": "EP_MAIN",
+    "Swan and Dolphin Hotel": "SND_MAIN",
+    "Disney's Yacht and Beach Club Resorts": "YBC_MAIN",
+    "Disney's Boardwalk Inn": "BWI_MAIN",
+    "Epcot International Gateway": "EP_INTGATE",
+    "Generation Gap Bridge": "GGB_MAIN",
+    "Disney Springs Marketplace": "DS_MARKET",
+    "Disney Springs Landing": "DS_LANDING",
+    "Disney Springs West Side": "DS_WEST",
+    "Disney's Saratoga Springs Resort and Tree Houses": "SSR_MAIN",
+    "Animal Kingdom": "AK_MAIN"
   },
   "connections": [
     {
@@ -243,7 +259,7 @@
       "bidirectional": true
     },
     {
-      "from": "SSR_MAIN_BOAT_BLUE",
+      "from": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES_BOAT_BLUE",
       "to": "DS_LANDING_BOAT_BLUE",
       "weight": 15,
       "mode": "Blue Flag Sassagoula River Ferry Boat",
@@ -255,6 +271,27 @@
       "weight": 10,
       "mode": "Green Flag Sassagoula River Ferry Boat",
       "bidirectional": true
+    },
+    {
+      "from": "DS_LANDING_BOAT_RED",
+      "to": "DS_WEST_BOAT_RED",
+      "weight": 6,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_WEST_BOAT_RED",
+      "to": "DS_MARKET_BOAT_RED",
+      "weight": 6,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_MARKET_BOAT_RED",
+      "to": "DS_LANDING_BOAT_RED",
+      "weight": 6,
+      "mode": "Walk",
+      "bidirectional": false
     },
     {
       "from": "CBR_MAIN_SKY",
@@ -649,6 +686,202 @@
       "bidirectional": false
     },
     {
+      "from": "DS_MARKET",
+      "to": "DS_MARKET_BOAT_YELLOW",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_MARKET_BOAT_YELLOW",
+      "to": "DS_MARKET",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_MARKET",
+      "to": "DS_MARKET_BOAT_PURPLE",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_MARKET_BOAT_PURPLE",
+      "to": "DS_MARKET",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_LANDING",
+      "to": "DS_LANDING_BOAT_BLUE",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_LANDING_BOAT_BLUE",
+      "to": "DS_LANDING",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_LANDING",
+      "to": "DS_LANDING_BOAT_GREEN",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_LANDING_BOAT_GREEN",
+      "to": "DS_LANDING",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "OKW_MAIN_BOAT_GREEN",
+      "to": "OKW_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "OKW_MAIN",
+      "to": "OKW_MAIN_BOAT_GREEN",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES_BOAT_BLUE",
+      "to": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES",
+      "to": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES_BOAT_BLUE",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "POR_MAIN_BOAT_YELLOW",
+      "to": "POR_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "POR_MAIN",
+      "to": "POR_MAIN_BOAT_YELLOW",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "POFQ_MAIN_BOAT_PURPLE",
+      "to": "POFQ_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "POFQ_MAIN",
+      "to": "POFQ_MAIN_BOAT_PURPLE",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_LANDING_BOAT_BLUE",
+      "to": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES_BOAT_BLUE",
+      "weight": 8,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_MARKET_BOAT_YELLOW",
+      "to": "POR_MAIN_BOAT_YELLOW",
+      "weight": 8,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_MARKET_BOAT_PURPLE",
+      "to": "POFQ_MAIN_BOAT_PURPLE",
+      "weight": 8,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_LANDING",
+      "to": "DS_LANDING_BOAT_RED",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_WEST",
+      "to": "DS_WEST_BOAT_RED",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_MARKET",
+      "to": "DS_MARKET_BOAT_RED",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_LANDING_BOAT_RED",
+      "to": "DS_LANDING",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_WEST_BOAT_RED",
+      "to": "DS_WEST",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_MARKET_BOAT_RED",
+      "to": "DS_MARKET",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "DS_WEST",
+      "to": "DS_MAIN",
+      "weight": 10,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "DS_LANDING",
+      "to": "DS_MAIN",
+      "weight": 10,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "DS_MARKET",
+      "to": "DS_MAIN",
+      "weight": 10,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
       "from": "POLY_MAIN",
       "to": "POLY_BUS",
       "weight": 20,
@@ -661,20 +894,6 @@
       "weight": 5,
       "mode": "Walk",
       "bidirectional": false
-    },
-    {
-      "from": "POLY_BUS",
-      "to": "MK_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "POLY_BUS",
-      "to": "EP_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
     },
     {
       "from": "POLY_BUS",
@@ -713,20 +932,6 @@
     },
     {
       "from": "GF_BUS",
-      "to": "MK_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "GF_BUS",
-      "to": "EP_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "GF_BUS",
       "to": "HS_BUS",
       "weight": 20,
       "mode": "Bus",
@@ -762,20 +967,6 @@
     },
     {
       "from": "CONT_BUS",
-      "to": "MK_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "CONT_BUS",
-      "to": "EP_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "CONT_BUS",
       "to": "HS_BUS",
       "weight": 20,
       "mode": "Bus",
@@ -808,13 +999,6 @@
       "weight": 5,
       "mode": "Walk",
       "bidirectional": false
-    },
-    {
-      "from": "FTW_BUS",
-      "to": "MK_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
     },
     {
       "from": "FTW_BUS",
@@ -857,13 +1041,6 @@
       "weight": 5,
       "mode": "Walk",
       "bidirectional": false
-    },
-    {
-      "from": "WL_BUS",
-      "to": "MK_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
     },
     {
       "from": "WL_BUS",
@@ -916,20 +1093,6 @@
     },
     {
       "from": "POP_BUS",
-      "to": "EP_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "POP_BUS",
-      "to": "HS_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "POP_BUS",
       "to": "AK_BUS",
       "weight": 20,
       "mode": "Bus",
@@ -959,20 +1122,6 @@
     {
       "from": "AOA_BUS",
       "to": "MK_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "AOA_BUS",
-      "to": "EP_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "AOA_BUS",
-      "to": "HS_BUS",
       "weight": 20,
       "mode": "Bus",
       "bidirectional": true
@@ -1014,20 +1163,6 @@
     },
     {
       "from": "CBR_BUS",
-      "to": "EP_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "CBR_BUS",
-      "to": "HS_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "CBR_BUS",
       "to": "AK_BUS",
       "weight": 20,
       "mode": "Bus",
@@ -1057,20 +1192,6 @@
     {
       "from": "RIV_BUS",
       "to": "MK_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "RIV_BUS",
-      "to": "EP_BUS",
-      "weight": 20,
-      "mode": "Bus",
-      "bidirectional": true
-    },
-    {
-      "from": "RIV_BUS",
-      "to": "HS_BUS",
       "weight": 20,
       "mode": "Bus",
       "bidirectional": true
@@ -1132,7 +1253,231 @@
       "bidirectional": true
     },
     {
-      "from": "OKW_BUS",
+      "from": "POR_MAIN",
+      "to": "POR_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "POR_BUS",
+      "to": "POR_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "POR_BUS",
+      "to": "MK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POR_BUS",
+      "to": "EP_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POR_BUS",
+      "to": "HS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POR_BUS",
+      "to": "AK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POFQ_MAIN",
+      "to": "POFQ_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "POFQ_BUS",
+      "to": "POFQ_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "POFQ_BUS",
+      "to": "MK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POFQ_BUS",
+      "to": "EP_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POFQ_BUS",
+      "to": "HS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POFQ_BUS",
+      "to": "AK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AKL_MAIN",
+      "to": "AKL_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "AKL_BUS",
+      "to": "AKL_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "AKL_BUS",
+      "to": "MK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AKL_BUS",
+      "to": "EP_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AKL_BUS",
+      "to": "HS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AKL_BUS",
+      "to": "AK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AKL_BUS",
+      "to": "DS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MOVIE_MAIN",
+      "to": "AS_MOVIE_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "AS_MOVIE_BUS",
+      "to": "AS_MOVIE_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "AS_MOVIE_BUS",
+      "to": "MK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MOVIE_BUS",
+      "to": "EP_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MOVIE_BUS",
+      "to": "HS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MOVIE_BUS",
+      "to": "AK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MOVIE_BUS",
+      "to": "DS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MUSIC_MAIN",
+      "to": "AS_MUSIC_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "AS_MUSIC_BUS",
+      "to": "AS_MUSIC_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "AS_MUSIC_BUS",
+      "to": "MK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MUSIC_BUS",
+      "to": "EP_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MUSIC_BUS",
+      "to": "HS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MUSIC_BUS",
+      "to": "AK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MUSIC_BUS",
       "to": "DS_BUS",
       "weight": 20,
       "mode": "Bus",
