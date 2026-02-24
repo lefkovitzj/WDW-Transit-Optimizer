@@ -13,7 +13,7 @@ from fastapi.staticfiles import StaticFiles
 # Local imports
 from app.core.config import settings
 from app.core.graph import GraphManager
-from app.routes import router
+from app.routes import router, graph_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -31,6 +31,7 @@ app = FastAPI(
 
 # Add application routes.
 app.include_router(router)
+app.include_router(graph_router)
 
 # Mount static files (CSS, JS, images).
 app.mount("/static", StaticFiles(directory="app/static"), name="static")

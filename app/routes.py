@@ -8,14 +8,34 @@ Last Modified: 1/10/2026
 
 # Python standard library imports.
 from typing import List
+from pathlib import Path
+import json
 
 # Third-party imports.
-from fastapi import APIRouter, Request, Form, Depends
-from fastapi.responses import HTMLResponse
+from fastapi import APIRouter, Request, Form, Depends, HTTPException
+from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
 
 # Local imports.
 from app.core.config import settings
+
+graph_router = APIRouter(tags=["graph"])
+
+BASE_DIR = Path(__file__).resolve().parents[1]
+DATA_PATH = BASE_DIR / "data" / "wdw_graph.json"
+TEMPLATES = Jinja2Templates(directory=str(BASE_DIR / "app" / "templates"))
+
+@graph_router.get("/api/graph")
+def get_graph_data():
+    if not DATA_PATH.exists():
+        raise HTTPException(status_code=404, detail=f"Graph file not found: {DATA_PATH}")
+    with DATA_PATH.open("r", encoding="utf-8") as f:
+        return JSONResponse(json.load(f))
+
+@graph_router.get("/graph")
+def graph_page(request: Request):
+    return TEMPLATES.TemplateResponse("graph.html", {"request": request})
+
 
 router = APIRouter()
 templates = Jinja2Templates(directory="app/templates")
