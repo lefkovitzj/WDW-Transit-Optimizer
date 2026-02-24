@@ -44,7 +44,16 @@
   <div class="wrap">
     <div id="graph"></div>
     <aside id="panel">
-      <h3>Connectivity</h3>
+    <h3>Connectivity</h3>
+
+    <h4>Find node</h4>
+    <input id="nodeSearch" type="text" placeholder="Type node name or ID..." style="width:100%;box-sizing:border-box;" />
+    <div style="margin-top:8px;">
+        <button id="searchBtn" type="button">Search</button>
+        <button id="clearSearchBtn" type="button">Clear</button>
+    </div>
+    <div id="searchStatus" class="muted" style="margin-top:6px;"></div>
+    <ul id="searchResults"></ul>
       <div id="stats" class="muted">Loading…</div>
       <h4>Isolated nodes (degree 0)</h4>
       <ul id="isolatedList"></ul>
@@ -53,7 +62,7 @@
     </aside>
   </div>
 
-  <script src="/static/vendor/vis-network.min.js"></script><script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <script src="/static/js/graph.js"></script>
 </body>
 </html>
