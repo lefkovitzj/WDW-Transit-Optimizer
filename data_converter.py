@@ -38,7 +38,7 @@ boats = [
     ("Epcot International Gateway - Crescent Lake Friendship Boat to Hollywood Studios", "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Hollywood Studios", 8, "Crescent Lake Friendship Boat to Hollywood Studios", False),
     ("Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat", "Disney Springs Marketplace - Purple Flag Sassagoula River Ferry Boat", 20, "Purple Flag Sassagoula River Ferry Boat", True),
     ("Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat", "Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", 17, "Yellow Flag Sassagoula River Ferry Boat", True),
-    ("Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", "Disney Springs Landing - Blue Flag Sassagoula River Ferry Boat", 15, "Blue Flag Sassagoula River Ferry Boat", True),
+    ("Disney's Saratoga Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", "Disney Springs Landing - Blue Flag Sassagoula River Ferry Boat", 15, "Blue Flag Sassagoula River Ferry Boat", True),
     ("Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat", "Disney Springs Landing - Green Flag Sassagoula River Ferry Boat", 10, "Green Flag Sassagoula River Ferry Boat", True),
     ("Disney Springs Landing - Red Flag Ferry Boat", "Disney Springs West Side - Red Flag Ferry Boat", 6, "Walk", False),
     ("Disney Springs West Side - Red Flag Ferry Boat", "Disney Springs Marketplace - Red Flag Ferry Boat", 6, "Walk", False),
@@ -115,14 +115,14 @@ walks = [
 
     ("Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat", "Disney's Old Key West Resort", 1, "Walk", False),
     ("Disney's Old Key West Resort", "Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat", 20, "Walk", False),
-    ("Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", "Disney's Saratogoa Springs Resort and Tree Houses", 1, "Walk", False),
-    ("Disney's Saratogoa Springs Resort and Tree Houses", "Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", 20, "Walk", False),
+    ("Disney's Saratoga Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", "Disney's Saratoga Springs Resort and Tree Houses", 1, "Walk", False),
+    ("Disney's Saratoga Springs Resort and Tree Houses", "Disney's Saratoga Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", 20, "Walk", False),
     ("Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat", "Disney's Port Orleans Riverside Resort", 1, "Walk", False),
     ("Disney's Port Orleans Riverside Resort", "Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat", 20, "Walk", False),
     ("Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat", "Disney's Port Orleans French Quarter Resort", 1, "Walk", False),
     ("Disney's Port Orleans French Quarter Resort", "Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat", 20, "Walk", False),
 
-    ("Disney Springs Landing - Blue Flag Sassagoula River Ferry Boat", "Disney's Saratogoa Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", 8, "Walk", False),
+    ("Disney Springs Landing - Blue Flag Sassagoula River Ferry Boat", "Disney's Saratoga Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", 8, "Walk", False),
     ("Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", "Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat", 8, "Walk", False),
     ("Disney Springs Marketplace - Purple Flag Sassagoula River Ferry Boat", "Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat", 8, "Walk", False),
     
@@ -136,6 +136,34 @@ walks = [
     ("Disney Springs West Side", "Disney Springs", 10, "Walk", True),
     ("Disney Springs Landing", "Disney Springs", 10, "Walk", True),
     ("Disney Springs Marketplace", "Disney Springs", 10, "Walk", True),
+
+    ("Disney's Yacht and Beach Club Resorts", "Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Epcot", 20, "Walk", False),
+    ("Disney's Yacht and Beach Club Resorts", "Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Hollywood Studios", 20, "Walk", False),
+    ("Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Epcot", "Disney's Yacht and Beach Club Resorts", 1, "Walk", False),
+    ("Disney's Yacht and Beach Club Resorts - Crescent Lake Friendship Boat to Hollywood Studios", "Disney's Yacht and Beach Club Resorts", 1, "Walk", False),
+    
+    ("Disney's Boardwalk Inn", "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Epcot", 20, "Walk", False),
+    ("Disney's Boardwalk Inn", "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Hollywood Studios", 20, "Walk", False),
+    ("Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Epcot", "Disney's Boardwalk Inn", 1, "Walk", False),
+    ("Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Hollywood Studios", "Disney's Boardwalk Inn", 1, "Walk", False),
+    
+    ("Epcot International Gateway", "Epcot International Gateway - Crescent Lake Friendship Boat to Epcot", 20, "Walk", False),
+    ("Epcot International Gateway", "Epcot International Gateway - Crescent Lake Friendship Boat to Hollywood Studios", 20, "Walk", False),
+    ("Epcot International Gateway - Crescent Lake Friendship Boat to Epcot", "Epcot International Gateway", 1, "Walk", False),
+    ("Epcot International Gateway - Crescent Lake Friendship Boat to Hollywood Studios", "Epcot International Gateway", 1, "Walk", False),
+    
+    ("Hollywood Studios", "Hollywood Studios - Crescent Lake Friendship Boat to Epcot", 20, "Walk", False),
+    ("Hollywood Studios", "Hollywood Studios - Crescent Lake Friendship Boat to Hollywood Studios", 20, "Walk", False),
+    ("Hollywood Studios - Crescent Lake Friendship Boat to Epcot", "Hollywood Studios", 1, "Walk", False),
+    ("Hollywood Studios - Crescent Lake Friendship Boat to Hollywood Studios", "Hollywood Studios", 1, "Walk", False),
+    
+    ("Swan and Dolphin Hotel", "Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Epcot", 20, "Walk", False),
+    ("Swan and Dolphin Hotel", "Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Hollywood Studios", 20, "Walk", False),
+    ("Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Epcot", "Swan and Dolphin Hotel", 1, "Walk", False),
+    ("Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Hollywood Studios", "Swan and Dolphin Hotel", 1, "Walk", False),
+
+    ("Disney's Saratoga Springs Resort and Tree Houses", "Disney's Saratoga Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", 1, "Walk", False),
+    ("Disney's Saratoga Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", "Disney's Saratoga Springs Resort and Tree Houses", 20, "Walk", False),
 ]
 bus_only = [
     "Disney's Animal Kingdom Lodge Resort",
@@ -147,6 +175,7 @@ mapping = {
         "Magic Kingdom": "MK_MAIN",
         "Epcot": "EP_MAIN",
         "Hollywood Studios": "HS_MAIN",
+        "Animal Kingdom": "AK_MAIN",
         "Ticket & Transportation Center": "TTC_MAIN",
         "Disney's Polynesian Village Resort": "POLY_MAIN",
         "Disney's Grand Floridian Resort & Spa": "GF_MAIN",
@@ -161,7 +190,6 @@ mapping = {
         "Disney's Yacht and Beach Club Resorts": "YBC_MAIN",
         "Disney's Boardwalk Inn": "BWI_MAIN",
         "Epcot International Gateway": "EP_INTGATE",
-        "Generation Gap Bridge": "GGB_MAIN",
         "Disney Springs Marketplace": "DS_MARKET",
         "Disney Springs Landing": "DS_LANDING",
         "Disney Springs West Side": "DS_WEST",
@@ -173,7 +201,9 @@ mapping = {
         "Disney's All-Star Movies Resort": "AS_MOVIE_MAIN",
         "Disney's All-Star Music Resort": "AS_MUSIC_MAIN",
         "Disney Springs": "DS_MAIN",
-        "Animal Kingdom": "AK_MAIN",
+        "Disney Springs - Landing": "DS_LANDING",
+        "Disney Springs - Marketplace": "DS_MARKET",
+        "Disney Springs - West Side": "DS_WEST",
     }
 
 no_bus_nodes = [

@@ -31,12 +31,12 @@
     "Disney's Boardwalk Inn - Crescent Lake Friendship Boat to Hollywood Studios": "BWI_MAIN_BOAT",
     "Disney's Port Orleans French Quarter Resort - Purple Flag Sassagoula River Ferry Boat": "POFQ_MAIN_BOAT_PURPLE",
     "Disney's Port Orleans Riverside Resort - Yellow Flag Sassagoula River Ferry Boat": "POR_MAIN_BOAT_YELLOW",
+    "Disney's Saratoga Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat": "SSR_MAIN_BOAT_BLUE",
     "Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat": "OKW_MAIN_BOAT_GREEN",
     "Disney's Caribbean Beach Resort - Epcot Skyliner": "CBR_MAIN_SKY",
     "Disney Vacation Club Riviera Resort - Epcot Skyliner": "RIV_MAIN_SKY",
     "Hollywood Studios - Hollywood Studios Skyliner": "HS_MAIN_SKY",
     "Disney's Caribbean Beach Resort - Pop Century/Art of Animation Skyliner": "CBR_MAIN_SKY",
-    "Generation Gap Bridge - Pop Century/Art of Animation Skyliner": "GGB_MAIN_SKY",
     "Ticket & Transportation Center": "TTC_MAIN",
     "Disney's Polynesian Village Resort": "POLY_MAIN",
     "Disney's Grand Floridian Resort & Spa": "GF_MAIN",
@@ -50,23 +50,25 @@
     "Disney Vacation Club Riviera Resort": "RIV_MAIN",
     "Hollywood Studios": "HS_MAIN",
     "Disney's Old Key West Resort": "OKW_MAIN",
+    "Disney's Saratoga Springs Resort and Tree Houses": "SSR_MAIN",
     "Disney's Port Orleans Riverside Resort": "POR_MAIN",
     "Disney's Port Orleans French Quarter Resort": "POFQ_MAIN",
     "Disney Springs": "DS_MAIN",
+    "Disney's Yacht and Beach Club Resorts": "YBC_MAIN",
+    "Disney's Boardwalk Inn": "BWI_MAIN",
+    "Swan and Dolphin Hotel": "SND_MAIN",
     "Disney's Animal Kingdom Lodge Resort": "AKL_MAIN",
     "Disney's All-Star Movies Resort": "AS_MOVIE_MAIN",
     "Disney's All-Star Music Resort": "AS_MUSIC_MAIN",
     "Epcot": "EP_MAIN",
-    "Swan and Dolphin Hotel": "SND_MAIN",
-    "Disney's Yacht and Beach Club Resorts": "YBC_MAIN",
-    "Disney's Boardwalk Inn": "BWI_MAIN",
+    "Animal Kingdom": "AK_MAIN",
     "Epcot International Gateway": "EP_INTGATE",
-    "Generation Gap Bridge": "GGB_MAIN",
     "Disney Springs Marketplace": "DS_MARKET",
     "Disney Springs Landing": "DS_LANDING",
     "Disney Springs West Side": "DS_WEST",
-    "Disney's Saratoga Springs Resort and Tree Houses": "SSR_MAIN",
-    "Animal Kingdom": "AK_MAIN"
+    "Disney Springs - Landing": "DS_LANDING",
+    "Disney Springs - Marketplace": "DS_MARKET",
+    "Disney Springs - West Side": "DS_WEST"
   },
   "connections": [
     {
@@ -259,7 +261,7 @@
       "bidirectional": true
     },
     {
-      "from": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES_BOAT_BLUE",
+      "from": "SSR_MAIN_BOAT_BLUE",
       "to": "DS_LANDING_BOAT_BLUE",
       "weight": 15,
       "mode": "Blue Flag Sassagoula River Ferry Boat",
@@ -316,7 +318,7 @@
     },
     {
       "from": "CBR_MAIN_SKY",
-      "to": "GGB_MAIN_SKY",
+      "to": "GENERATION_GAP_BRIDGE_SKY",
       "weight": 5,
       "mode": "Pop Century/Art of Animation Skyliner",
       "bidirectional": true
@@ -588,14 +590,14 @@
       "bidirectional": false
     },
     {
-      "from": "GGB_MAIN_SKY",
+      "from": "GENERATION_GAP_BRIDGE_SKY",
       "to": "POP_MAIN",
       "weight": 10,
       "mode": "Walk",
       "bidirectional": true
     },
     {
-      "from": "GGB_MAIN_SKY",
+      "from": "GENERATION_GAP_BRIDGE_SKY",
       "to": "AOA_MAIN",
       "weight": 10,
       "mode": "Walk",
@@ -756,15 +758,15 @@
       "bidirectional": false
     },
     {
-      "from": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES_BOAT_BLUE",
-      "to": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES",
+      "from": "SSR_MAIN_BOAT_BLUE",
+      "to": "SSR_MAIN",
       "weight": 1,
       "mode": "Walk",
       "bidirectional": false
     },
     {
-      "from": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES",
-      "to": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES_BOAT_BLUE",
+      "from": "SSR_MAIN",
+      "to": "SSR_MAIN_BOAT_BLUE",
       "weight": 20,
       "mode": "Walk",
       "bidirectional": false
@@ -799,7 +801,7 @@
     },
     {
       "from": "DS_LANDING_BOAT_BLUE",
-      "to": "DISNEY'S_SARATOGOA_SPRINGS_RESORT_AND_TREE_HOUSES_BOAT_BLUE",
+      "to": "SSR_MAIN_BOAT_BLUE",
       "weight": 8,
       "mode": "Walk",
       "bidirectional": false
@@ -880,6 +882,160 @@
       "weight": 10,
       "mode": "Walk",
       "bidirectional": true
+    },
+    {
+      "from": "YBC_MAIN",
+      "to": "YBC_MAIN_BOAT",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "YBC_MAIN",
+      "to": "YBC_MAIN_BOAT",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "YBC_MAIN_BOAT",
+      "to": "YBC_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "YBC_MAIN_BOAT",
+      "to": "YBC_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "BWI_MAIN",
+      "to": "BWI_MAIN_BOAT",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "BWI_MAIN",
+      "to": "BWI_MAIN_BOAT",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "BWI_MAIN_BOAT",
+      "to": "BWI_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "BWI_MAIN_BOAT",
+      "to": "BWI_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "EP_INTGATE",
+      "to": "EP_INTGATE_BOAT",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "EP_INTGATE",
+      "to": "EP_INTGATE_BOAT",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "EP_INTGATE_BOAT",
+      "to": "EP_INTGATE",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "EP_INTGATE_BOAT",
+      "to": "EP_INTGATE",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "HS_MAIN",
+      "to": "HS_MAIN_BOAT",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "HS_MAIN",
+      "to": "HS_MAIN_BOAT",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "HS_MAIN_BOAT",
+      "to": "HS_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "HS_MAIN_BOAT",
+      "to": "HS_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "SND_MAIN",
+      "to": "SND_MAIN_BOAT",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "SND_MAIN",
+      "to": "SND_MAIN_BOAT",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "SND_MAIN_BOAT",
+      "to": "SND_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "SND_MAIN_BOAT",
+      "to": "SND_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "SSR_MAIN",
+      "to": "SSR_MAIN_BOAT_BLUE",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "SSR_MAIN_BOAT_BLUE",
+      "to": "SSR_MAIN",
+      "weight": 20,
+      "mode": "Walk",
+      "bidirectional": false
     },
     {
       "from": "POLY_MAIN",
@@ -1253,6 +1409,48 @@
       "bidirectional": true
     },
     {
+      "from": "SSR_MAIN",
+      "to": "SSR_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "SSR_BUS",
+      "to": "SSR_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "SSR_BUS",
+      "to": "MK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "SSR_BUS",
+      "to": "EP_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "SSR_BUS",
+      "to": "HS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "SSR_BUS",
+      "to": "AK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "POR_MAIN",
       "to": "POR_BUS",
       "weight": 20,
@@ -1332,6 +1530,111 @@
     {
       "from": "POFQ_BUS",
       "to": "AK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "YBC_MAIN",
+      "to": "YBC_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "YBC_BUS",
+      "to": "YBC_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "YBC_BUS",
+      "to": "MK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "YBC_BUS",
+      "to": "AK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "YBC_BUS",
+      "to": "DS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "BWI_MAIN",
+      "to": "BWI_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "BWI_BUS",
+      "to": "BWI_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "BWI_BUS",
+      "to": "MK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "BWI_BUS",
+      "to": "AK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "BWI_BUS",
+      "to": "DS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "SND_MAIN",
+      "to": "SND_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "SND_BUS",
+      "to": "SND_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "SND_BUS",
+      "to": "MK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "SND_BUS",
+      "to": "AK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "SND_BUS",
+      "to": "DS_BUS",
       "weight": 20,
       "mode": "Bus",
       "bidirectional": true
