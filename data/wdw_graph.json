@@ -68,7 +68,9 @@
     "Disney Springs West Side": "DS_WEST",
     "Disney Springs - Landing": "DS_LANDING",
     "Disney Springs - Marketplace": "DS_MARKET",
-    "Disney Springs - West Side": "DS_WEST"
+    "Disney Springs - West Side": "DS_WEST",
+    "Disney's Blizzard Beach Water Park": "BB_MAIN",
+    "Disney's Typhoon Lagoon Water Park": "TL_MAIN"
   },
   "connections": [
     {
@@ -1073,6 +1075,20 @@
       "bidirectional": true
     },
     {
+      "from": "POLY_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POLY_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "GF_MAIN",
       "to": "GF_BUS",
       "weight": 20,
@@ -1108,6 +1124,20 @@
       "bidirectional": true
     },
     {
+      "from": "GF_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "GF_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "CONT_MAIN",
       "to": "CONT_BUS",
       "weight": 20,
@@ -1138,6 +1168,20 @@
     {
       "from": "CONT_BUS",
       "to": "DS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "CONT_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "CONT_BUS",
+      "to": "TL_BUS",
       "weight": 20,
       "mode": "Bus",
       "bidirectional": true
@@ -1185,6 +1229,20 @@
       "bidirectional": true
     },
     {
+      "from": "FTW_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "FTW_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "WL_MAIN",
       "to": "WL_BUS",
       "weight": 20,
@@ -1227,6 +1285,20 @@
       "bidirectional": true
     },
     {
+      "from": "WL_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "WL_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "POP_MAIN",
       "to": "POP_BUS",
       "weight": 20,
@@ -1257,6 +1329,20 @@
     {
       "from": "POP_BUS",
       "to": "DS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POP_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POP_BUS",
+      "to": "TL_BUS",
       "weight": 20,
       "mode": "Bus",
       "bidirectional": true
@@ -1297,6 +1383,20 @@
       "bidirectional": true
     },
     {
+      "from": "AOA_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AOA_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "CBR_MAIN",
       "to": "CBR_BUS",
       "weight": 20,
@@ -1332,6 +1432,20 @@
       "bidirectional": true
     },
     {
+      "from": "CBR_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "CBR_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "RIV_MAIN",
       "to": "RIV_BUS",
       "weight": 20,
@@ -1362,6 +1476,20 @@
     {
       "from": "RIV_BUS",
       "to": "DS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "RIV_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "RIV_BUS",
+      "to": "TL_BUS",
       "weight": 20,
       "mode": "Bus",
       "bidirectional": true
@@ -1409,6 +1537,20 @@
       "bidirectional": true
     },
     {
+      "from": "OKW_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "OKW_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "SSR_MAIN",
       "to": "SSR_BUS",
       "weight": 20,
@@ -1446,6 +1588,20 @@
     {
       "from": "SSR_BUS",
       "to": "AK_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "SSR_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "SSR_BUS",
+      "to": "TL_BUS",
       "weight": 20,
       "mode": "Bus",
       "bidirectional": true
@@ -1493,6 +1649,20 @@
       "bidirectional": true
     },
     {
+      "from": "POR_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POR_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "POFQ_MAIN",
       "to": "POFQ_BUS",
       "weight": 20,
@@ -1535,6 +1705,20 @@
       "bidirectional": true
     },
     {
+      "from": "POFQ_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "POFQ_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "YBC_MAIN",
       "to": "YBC_BUS",
       "weight": 20,
@@ -1565,6 +1749,20 @@
     {
       "from": "YBC_BUS",
       "to": "DS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "YBC_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "YBC_BUS",
+      "to": "TL_BUS",
       "weight": 20,
       "mode": "Bus",
       "bidirectional": true
@@ -1605,6 +1803,20 @@
       "bidirectional": true
     },
     {
+      "from": "BWI_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "BWI_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "SND_MAIN",
       "to": "SND_BUS",
       "weight": 20,
@@ -1635,6 +1847,20 @@
     {
       "from": "SND_BUS",
       "to": "DS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "SND_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "SND_BUS",
+      "to": "TL_BUS",
       "weight": 20,
       "mode": "Bus",
       "bidirectional": true
@@ -1689,6 +1915,20 @@
       "bidirectional": true
     },
     {
+      "from": "AKL_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AKL_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "AS_MOVIE_MAIN",
       "to": "AS_MOVIE_BUS",
       "weight": 20,
@@ -1738,6 +1978,20 @@
       "bidirectional": true
     },
     {
+      "from": "AS_MOVIE_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MOVIE_BUS",
+      "to": "TL_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
       "from": "AS_MUSIC_MAIN",
       "to": "AS_MUSIC_BUS",
       "weight": 20,
@@ -1782,6 +2036,20 @@
     {
       "from": "AS_MUSIC_BUS",
       "to": "DS_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MUSIC_BUS",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MUSIC_BUS",
+      "to": "TL_BUS",
       "weight": 20,
       "mode": "Bus",
       "bidirectional": true
@@ -1852,6 +2120,34 @@
     {
       "from": "DS_MAIN",
       "to": "DS_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "BB_BUS",
+      "to": "BB_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "BB_MAIN",
+      "to": "BB_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "TL_BUS",
+      "to": "TL_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "TL_MAIN",
+      "to": "TL_BUS",
       "weight": 20,
       "mode": "Walk & Wait",
       "bidirectional": false

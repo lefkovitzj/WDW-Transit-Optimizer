@@ -204,6 +204,8 @@ mapping = {
         "Disney Springs - Landing": "DS_LANDING",
         "Disney Springs - Marketplace": "DS_MARKET",
         "Disney Springs - West Side": "DS_WEST",
+        "Disney's Blizzard Beach Water Park": "BB_MAIN",
+        "Disney's Typhoon Lagoon Water Park": "TL_MAIN",
     }
 
 no_bus_nodes = [
@@ -288,7 +290,7 @@ def generate_busses(final_data):
     """ Dynamically create bus routes based on existing data. """
     bus_connections = []
     display_names = final_data['display_names']
-    hubs = {"MK_MAIN":20, "EP_MAIN":20, "HS_MAIN":20, "AK_MAIN":20, "DS_MAIN":25, "TTC_MAIN":None}
+    hubs = {"MK_MAIN":20, "EP_MAIN":20, "HS_MAIN":20, "AK_MAIN":20, "DS_MAIN":25, "TTC_MAIN":None, "BB_MAIN":25, "TL_MAIN":25}
     
     # Select resort MAIN nodes only.
     resorts = [node_id for node_id in display_names.values() if node_id.endswith("_MAIN") and node_id not in hubs]
