@@ -43,6 +43,7 @@ mapping = {
         "Disney's Typhoon Lagoon Water Park": "TL_MAIN",
         "Disney's Fantasia Gardens & Fairways Miniature Golf": "FG_MAIN",
         "Disney's Winter Summerland Miniature Golf": "WS_MAIN",
+        "Disney's Coronado Springs Resort": "CSR_MAIN",
     }
 
 monorails = [
@@ -231,12 +232,14 @@ bus_sources = [
     "Disney's Animal Kingdom Lodge Resort",
     "Disney's All-Star Movies Resort",
     "Disney's All-Star Music Resort",
+    "Disney's Coronado Springs Resort",
 ]
 
 bus_only = [
     "Disney's Animal Kingdom Lodge Resort",
     "Disney's All-Star Movies Resort",
     "Disney's All-Star Music Resort",
+    "Disney's Coronado Springs Resort",
 ]
 
 no_bus_nodes = [

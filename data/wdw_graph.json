@@ -78,6 +78,7 @@
     "Disney's Animal Kingdom Lodge Resort": "AKL_MAIN",
     "Disney's All-Star Movies Resort": "AS_MOVIE_MAIN",
     "Disney's All-Star Music Resort": "AS_MUSIC_MAIN",
+    "Disney's Coronado Springs Resort": "CSR_MAIN",
     "Epcot": "EP_MAIN",
     "Animal Kingdom": "AK_MAIN",
     "Disney Springs - Landing": "DS_LANDING",
@@ -103,6 +104,7 @@
     "Disney's Animal Kingdom Lodge Resort - Bus Stop": "AKL_MAIN_BUS",
     "Disney's All-Star Movies Resort - Bus Stop": "AS_MOVIE_MAIN_BUS",
     "Disney's All-Star Music Resort - Bus Stop": "AS_MUSIC_MAIN_BUS",
+    "Disney's Coronado Springs Resort - Bus Stop": "CSR_MAIN_BUS",
     "Magic Kingdom - Bus Stop": "MK_MAIN_BUS",
     "Epcot - Bus Stop": "EP_MAIN_BUS",
     "Hollywood Studios - Bus Stop": "HS_MAIN_BUS",
@@ -2123,6 +2125,69 @@
     },
     {
       "from": "AS_MUSIC_MAIN_BUS",
+      "to": "TL_MAIN_BUS",
+      "weight": 25,
+      "mode": "Bus",
+      "bidirectional": false
+    },
+    {
+      "from": "CSR_MAIN",
+      "to": "CSR_MAIN_BUS",
+      "weight": 20,
+      "mode": "Walk & Wait",
+      "bidirectional": false
+    },
+    {
+      "from": "CSR_MAIN_BUS",
+      "to": "CSR_MAIN",
+      "weight": 5,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "CSR_MAIN_BUS",
+      "to": "MK_MAIN_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": false
+    },
+    {
+      "from": "CSR_MAIN_BUS",
+      "to": "EP_MAIN_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": false
+    },
+    {
+      "from": "CSR_MAIN_BUS",
+      "to": "HS_MAIN_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": false
+    },
+    {
+      "from": "CSR_MAIN_BUS",
+      "to": "AK_MAIN_BUS",
+      "weight": 20,
+      "mode": "Bus",
+      "bidirectional": false
+    },
+    {
+      "from": "CSR_MAIN_BUS",
+      "to": "DS_MAIN_BUS",
+      "weight": 25,
+      "mode": "Bus",
+      "bidirectional": false
+    },
+    {
+      "from": "CSR_MAIN_BUS",
+      "to": "BB_MAIN_BUS",
+      "weight": 25,
+      "mode": "Bus",
+      "bidirectional": false
+    },
+    {
+      "from": "CSR_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
