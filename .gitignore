@@ -1,5 +1,6 @@
 # Python bytecode files
 __pycache__/*
+data/__pycache__/*
 
 # Environment files
 .env
