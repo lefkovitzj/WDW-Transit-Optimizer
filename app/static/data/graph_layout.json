@@ -1,0 +1,422 @@
+{
+  "TTC_MAIN_RMON": {
+    "x": -250,
+    "y": -552
+  },
+  "POLY_MAIN_RMON": {
+    "x": -259,
+    "y": -1008
+  },
+  "GF_MAIN_RMON": {
+    "x": -1007,
+    "y": -997
+  },
+  "MK_MAIN_RMON": {
+    "x": -1003,
+    "y": -537
+  },
+  "CONT_MAIN_RMON": {
+    "x": -628,
+    "y": -548
+  },
+  "TTC_MAIN_EMON": {
+    "x": -424,
+    "y": -231
+  },
+  "MK_MAIN_EMON": {
+    "x": -736,
+    "y": -225
+  },
+  "TTC_MAIN_EPMON": {
+    "x": 267,
+    "y": -225
+  },
+  "EP_MAIN_EPMON": {
+    "x": 836,
+    "y": -224
+  },
+  "TTC_MAIN_FERRY": {
+    "x": -81,
+    "y": -96
+  },
+  "MK_MAIN": {
+    "x": -1024,
+    "y": -229
+  },
+  "POLY_MAIN_GOLD_FLAG_LAUNCH": {
+    "x": -321,
+    "y": -750
+  },
+  "MK_MAIN_GOLD_FLAG_LAUNCH": {
+    "x": -1180,
+    "y": -427
+  },
+  "GF_MAIN_GOLD_FLAG_LAUNCH": {
+    "x": -835,
+    "y": -745
+  },
+  "MK_MAIN_GREEN_FLAG_LAUNCH": {
+    "x": -1191,
+    "y": -132
+  },
+  "FTW_MAIN_GREEN_FLAG_LAUNCH": {
+    "x": -1436,
+    "y": 38
+  },
+  "WL_MAIN_RED_FLAG_LAUNCH": {
+    "x": -1017,
+    "y": 258
+  },
+  "MK_MAIN_RED_FLAG_LAUNCH": {
+    "x": -1020,
+    "y": -62
+  },
+  "CONT_MAIN_BLUE_FLAG_LAUNCH": {
+    "x": -630,
+    "y": -321
+  },
+  "FTW_MAIN_BLUE_FLAG_LAUNCH": {
+    "x": -1039,
+    "y": 130
+  },
+  "WL_MAIN_BLUE_FLAG_LAUNCH": {
+    "x": -623,
+    "y": 128
+  },
+  "HS_MAIN_CRESCENT_LAKE_FRIENDSHIP_BOAT_TO_EPCOT": {
+    "x": 2674,
+    "y": 174
+  },
+  "SND_MAIN_CRESCENT_LAKE_FRIENDSHIP_BOAT_TO_EPCOT": {
+    "x": 2275,
+    "y": 205
+  },
+  "YBC_MAIN_CRESCENT_LAKE_FRIENDSHIP_BOAT_TO_EPCOT": {
+    "x": 1924,
+    "y": 184
+  },
+  "BWI_MAIN_CRESCENT_LAKE_FRIENDSHIP_BOAT_TO_EPCOT": {
+    "x": 1506,
+    "y": 213
+  },
+  "EP_INTGATE_CRESCENT_LAKE_FRIENDSHIP_BOAT_TO_EPCOT": {
+    "x": 1134,
+    "y": 184
+  },
+  "SND_MAIN_CRESCENT_LAKE_FRIENDSHIP_BOAT_TO_HOLLYWOOD_STUDIOS": {
+    "x": 2279,
+    "y": -193
+  },
+  "HS_MAIN_CRESCENT_LAKE_FRIENDSHIP_BOAT_TO_HOLLYWOOD_STUDIOS": {
+    "x": 2708,
+    "y": -167
+  },
+  "YBC_MAIN_CRESCENT_LAKE_FRIENDSHIP_BOAT_TO_HOLLYWOOD_STUDIOS": {
+    "x": 1905,
+    "y": -170
+  },
+  "BWI_MAIN_CRESCENT_LAKE_FRIENDSHIP_BOAT_TO_HOLLYWOOD_STUDIOS": {
+    "x": 1521,
+    "y": -206
+  },
+  "EP_INTGATE_CRESCENT_LAKE_FRIENDSHIP_BOAT_TO_HOLLYWOOD_STUDIOS": {
+    "x": 1117,
+    "y": -168
+  },
+  "POFQ_MAIN_PURPLE_FLAG_SASSAGOULA_RIVER_FERRY_BOAT": {
+    "x": 990,
+    "y": -436
+  },
+  "DS_MARKET_PURPLE_FLAG_SASSAGOULA_RIVER_FERRY_BOAT": {
+    "x": 1524,
+    "y": -440
+  },
+  "POR_MAIN_YELLOW_FLAG_SASSAGOULA_RIVER_FERRY_BOAT": {
+    "x": 1077,
+    "y": -540
+  },
+  "DS_MARKET_YELLOW_FLAG_SASSAGOULA_RIVER_FERRY_BOAT": {
+    "x": 1524,
+    "y": -556
+  },
+  "SSR_MAIN_BLUE_FLAG_SASSAGOULA_RIVER_FERRY_BOAT": {
+    "x": 924,
+    "y": -1000
+  },
+  "DS_LANDING_BLUE_FLAG_SASSAGOULA_RIVER_FERRY_BOAT": {
+    "x": 1526,
+    "y": -1002
+  },
+  "OKW_MAIN_GREEN_FLAG_SASSAGOULA_RIVER_FERRY_BOAT": {
+    "x": 1035,
+    "y": -1166
+  },
+  "DS_LANDING_GREEN_FLAG_SASSAGOULA_RIVER_FERRY_BOAT": {
+    "x": 1524,
+    "y": -1170
+  },
+  "DS_LANDING_RED_FLAG_FERRY_BOAT": {
+    "x": 1523,
+    "y": -925
+  },
+  "DS_WEST_RED_FLAG_FERRY_BOAT": {
+    "x": 1523,
+    "y": -808
+  },
+  "DS_MARKET_RED_FLAG_FERRY_BOAT": {
+    "x": 1525,
+    "y": -672
+  },
+  "CBR_MAIN_SKY": {
+    "x": 857,
+    "y": 529
+  },
+  "RIV_MAIN_SKY": {
+    "x": 853,
+    "y": 318
+  },
+  "EP_INTGATE_SKY": {
+    "x": 846,
+    "y": 133
+  },
+  "HS_MAIN_SKY": {
+    "x": 1815,
+    "y": 514
+  },
+  "GENERATION_GAP_BRIDGE_SKY": {
+    "x": 864,
+    "y": 759
+  },
+  "TTC_MAIN": {
+    "x": -82,
+    "y": -228
+  },
+  "POLY_MAIN": {
+    "x": -322,
+    "y": -897
+  },
+  "GF_MAIN": {
+    "x": -838,
+    "y": -893
+  },
+  "CONT_MAIN": {
+    "x": -626,
+    "y": -436
+  },
+  "FTW_MAIN": {
+    "x": -1436,
+    "y": 136
+  },
+  "WL_MAIN": {
+    "x": -622,
+    "y": 255
+  },
+  "POP_MAIN": {
+    "x": 1202,
+    "y": 758
+  },
+  "AOA_MAIN": {
+    "x": 486,
+    "y": 760
+  },
+  "CBR_MAIN": {
+    "x": 506,
+    "y": 532
+  },
+  "RIV_MAIN": {
+    "x": 698,
+    "y": 267
+  },
+  "EP_INTGATE": {
+    "x": 839,
+    "y": 43
+  },
+  "HS_MAIN": {
+    "x": 2883,
+    "y": -9
+  },
+  "OKW_MAIN": {
+    "x": 593,
+    "y": -1156
+  },
+  "DS_MARKET": {
+    "x": 2101,
+    "y": -676
+  },
+  "DS_LANDING": {
+    "x": 2084,
+    "y": -1094
+  },
+  "SSR_MAIN": {
+    "x": 486,
+    "y": -991
+  },
+  "POR_MAIN": {
+    "x": 557,
+    "y": -609
+  },
+  "POFQ_MAIN": {
+    "x": 545,
+    "y": -434
+  },
+  "DS_WEST": {
+    "x": 2079,
+    "y": -846
+  },
+  "DS_MAIN": {
+    "x": 2337,
+    "y": -913
+  },
+  "YBC_MAIN": {
+    "x": 1915,
+    "y": 59
+  },
+  "BWI_MAIN": {
+    "x": 1501,
+    "y": 104
+  },
+  "SND_MAIN": {
+    "x": 2269,
+    "y": 41
+  },
+  "WS_MAIN": {
+    "x": 214,
+    "y": 321
+  },
+  "BB_MAIN": {
+    "x": 208,
+    "y": 197
+  },
+  "FG_MAIN": {
+    "x": 1218,
+    "y": 107
+  },
+  "AKL_MAIN": {
+    "x": -485,
+    "y": 616
+  },
+  "AS_MOVIE_MAIN": {
+    "x": -110,
+    "y": 763
+  },
+  "AS_MUSIC_MAIN": {
+    "x": 168,
+    "y": 762
+  },
+  "EP_MAIN": {
+    "x": 737,
+    "y": -108
+  },
+  "AK_MAIN": {
+    "x": -1015,
+    "y": 625
+  },
+  "TL_MAIN": {
+    "x": -84,
+    "y": 203
+  },
+  "POLY_MAIN_BUS": {
+    "x": -506,
+    "y": -943
+  },
+  "GF_MAIN_BUS": {
+    "x": -1114,
+    "y": -936
+  },
+  "CONT_MAIN_BUS": {
+    "x": -458,
+    "y": -486
+  },
+  "FTW_MAIN_BUS": {
+    "x": -1439,
+    "y": 263
+  },
+  "WL_MAIN_BUS": {
+    "x": -621,
+    "y": 337
+  },
+  "POP_MAIN_BUS": {
+    "x": 1198,
+    "y": 687
+  },
+  "AOA_MAIN_BUS": {
+    "x": 481,
+    "y": 706
+  },
+  "CBR_MAIN_BUS": {
+    "x": 508,
+    "y": 625
+  },
+  "RIV_MAIN_BUS": {
+    "x": 687,
+    "y": 207
+  },
+  "SND_MAIN_BUS": {
+    "x": 2381,
+    "y": -65
+  },
+  "YBC_MAIN_BUS": {
+    "x": 2045,
+    "y": -51
+  },
+  "BWI_MAIN_BUS": {
+    "x": 1624,
+    "y": -40
+  },
+  "POFQ_MAIN_BUS": {
+    "x": 464,
+    "y": -527
+  },
+  "POR_MAIN_BUS": {
+    "x": 462,
+    "y": -696
+  },
+  "SSR_MAIN_BUS": {
+    "x": 437,
+    "y": -895
+  },
+  "OKW_MAIN_BUS": {
+    "x": 478,
+    "y": -1218
+  },
+  "AKL_MAIN_BUS": {
+    "x": -483,
+    "y": 471
+  },
+  "AS_MOVIE_MAIN_BUS": {
+    "x": -112,
+    "y": 679
+  },
+  "AS_MUSIC_MAIN_BUS": {
+    "x": 171,
+    "y": 680
+  },
+  "MK_MAIN_BUS": {
+    "x": -907,
+    "y": -129
+  },
+  "EP_MAIN_BUS": {
+    "x": 597,
+    "y": -107
+  },
+  "HS_MAIN_BUS": {
+    "x": 1815,
+    "y": 396
+  },
+  "AK_MAIN_BUS": {
+    "x": -1015,
+    "y": 519
+  },
+  "DS_MAIN_BUS": {
+    "x": 2337,
+    "y": -636
+  },
+  "BB_MAIN_BUS": {
+    "x": 205,
+    "y": 79
+  },
+  "TL_MAIN_BUS": {
+    "x": -84,
+    "y": 87
+  }
+}
