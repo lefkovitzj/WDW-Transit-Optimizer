@@ -324,11 +324,28 @@ def has_premium_transit(resort_id, park_id, connections, no_bus_nodes=no_bus_nod
         return True
     return False
 
+def insert_bus_display_names(final_data):
+    """  Insert display names for bus nodes based on existing display names. """
+    for bus_source in bus_sources:
+        bus_source_id = clean_id(bus_source)
+        bus_source_stop_id = f"{bus_source_id}_BUS"
+        final_data["display_names"][bus_source] = bus_source_id
+        final_data["display_names"][f"{bus_source} - Bus Stop"] = bus_source_stop_id
+
+    for bus_destination in bus_destinations:
+        if not bus_destinations[bus_destination]:
+            continue
+        bus_destination_id = clean_id(bus_destination)
+        bus_destination_stop_id = f"{bus_destination_id}_BUS"
+        final_data["display_names"][bus_destination] = bus_destination_id
+        final_data["display_names"][f"{bus_destination} - Bus Stop"] = bus_destination_stop_id
+
+
 def generate_busses(final_data):
     """ Dynamically create bus routes based on existing data. """
     bus_connections = []
 
-    # One-time creation of busses at hubs.
+    # One-time creation of busses at hubs. 
     for hub, weight in bus_destinations.items():
         # No Disney busses offered to/from TTC hub.
         if weight:
@@ -412,6 +429,7 @@ def convert_to_json(all_raw_data, bus_only=[]):
         display_names[bus_only_u] = bus_id
     all_transport = {"display_names": display_names, "connections": connections}
     all_transport["connections"].extend(generate_busses(all_transport))
+    insert_bus_display_names(all_transport)
     return all_transport
 
 if __name__ == "__main__":
