@@ -66,6 +66,9 @@
     "Disney's Beach Club Resort": "BC_MAIN",
     "Disney's Yacht Club Resort": "YC_MAIN",
     "Swan and Dolphin Hotel": "SND_MAIN",
+    "Disney's All-Star Music Resort": "AS_MUSIC_MAIN",
+    "Disney's All-Star Sports Resort": "AS_SPORTS_MAIN",
+    "Disney's All-Star Movies Resort": "AS_MOVIE_MAIN",
     "Disney Springs Marketplace": "DS_MARKET",
     "Disney Springs Landing": "DS_LANDING",
     "Disney's Old Key West Resort": "OKW_MAIN",
@@ -80,9 +83,6 @@
     "Disney's Blizzard Beach Water Park": "BB_MAIN",
     "Disney's Fantasia Gardens & Fairways Miniature Golf": "FG_MAIN",
     "Disney's Animal Kingdom Lodge Resort": "AKL_MAIN",
-    "Disney's All-Star Movies Resort": "AS_MOVIE_MAIN",
-    "Disney's All-Star Music Resort": "AS_MUSIC_MAIN",
-    "Disney's All-Star Sports Resort": "AS_SPORTS_MAIN",
     "Disney's Coronado Springs Resort": "CSR_MAIN",
     "Animal Kingdom": "AK_MAIN",
     "Disney Springs - Landing": "DS_LANDING",
@@ -768,6 +768,20 @@
       "from": "MK_MAIN",
       "to": "CONT_MAIN",
       "weight": 11,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MUSIC_MAIN",
+      "to": "AS_SPORTS_MAIN",
+      "weight": 9,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "AS_MOVIE_MAIN",
+      "to": "AS_MUSIC_MAIN",
+      "weight": 8,
       "mode": "Walk",
       "bidirectional": true
     },

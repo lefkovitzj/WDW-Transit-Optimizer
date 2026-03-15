@@ -149,10 +149,13 @@ walks = [
     ("Epcot International Gateway", "Disney's Boardwalk Inn", 7, "Walk", True),
     ("Disney's Boardwalk Inn", "Swan and Dolphin Hotel", 7, "Walk", True),
     ("Disney's Yacht Club Resort", "Swan and Dolphin Hotel", 9, "Walk", True),
-    
+
     ("Disney's Polynesian Village Resort", "Disney's Grand Floridian Resort & Spa", 13, "Walk", True),
     ("Disney's Grand Floridian Resort & Spa", "Magic Kingdom", 17, "Walk", True),
     ("Magic Kingdom", "Disney's Contemporary Resort", 11, "Walk", True),
+
+    ("Disney's All-Star Music Resort", "Disney's All-Star Sports Resort", 9, "Walk", True),
+    ("Disney's All-Star Movies Resort", "Disney's All-Star Music Resort", 8, "Walk", True),
 
     ("Disney Springs Marketplace", "Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", 20, "Walk", False),
     ("Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", "Disney Springs Marketplace", 1, "Walk", False),
