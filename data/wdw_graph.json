@@ -69,12 +69,12 @@
     "Disney's All-Star Music Resort": "AS_MUSIC_MAIN",
     "Disney's All-Star Sports Resort": "AS_SPORTS_MAIN",
     "Disney's All-Star Movies Resort": "AS_MOVIE_MAIN",
+    "Disney's Port Orleans French Quarter Resort": "POFQ_MAIN",
+    "Disney's Port Orleans Riverside Resort": "POR_MAIN",
     "Disney Springs Marketplace": "DS_MARKET",
     "Disney Springs Landing": "DS_LANDING",
     "Disney's Old Key West Resort": "OKW_MAIN",
     "Disney's Saratoga Springs Resort and Tree Houses": "SSR_MAIN",
-    "Disney's Port Orleans Riverside Resort": "POR_MAIN",
-    "Disney's Port Orleans French Quarter Resort": "POFQ_MAIN",
     "Disney Springs West Side": "DS_WEST",
     "Disney Springs": "DS_MAIN",
     "Disney's Yacht and Beach Club Resorts Shared Dock": "DISNEY'S_YACHT_AND_BEACH_CLUB_RESORTS_SHARED_DOCK",
@@ -782,6 +782,13 @@
       "from": "AS_MOVIE_MAIN",
       "to": "AS_MUSIC_MAIN",
       "weight": 8,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "POFQ_MAIN",
+      "to": "POR_MAIN",
+      "weight": 13,
       "mode": "Walk",
       "bidirectional": true
     },

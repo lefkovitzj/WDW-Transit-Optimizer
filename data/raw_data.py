@@ -157,6 +157,8 @@ walks = [
     ("Disney's All-Star Music Resort", "Disney's All-Star Sports Resort", 9, "Walk", True),
     ("Disney's All-Star Movies Resort", "Disney's All-Star Music Resort", 8, "Walk", True),
 
+    ("Disney's Port Orleans French Quarter Resort", "Disney's Port Orleans Riverside Resort", 13, "Walk", True),
+
     ("Disney Springs Marketplace", "Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", 20, "Walk", False),
     ("Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", "Disney Springs Marketplace", 1, "Walk", False),
     ("Disney Springs Marketplace", "Disney Springs Marketplace - Purple Flag Sassagoula River Ferry Boat", 20, "Walk", False),
