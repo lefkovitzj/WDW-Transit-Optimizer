@@ -142,6 +142,14 @@ walks = [
     
     ("Disney's Caribbean Beach Resort", "Disney's Riviera Resort", 10, "Walk", True),
 
+    ("Epcot International Gateway", "Disney's Boardwalk Inn", 15, "Walk", True),
+    ("Epcot International Gateway", "Disney's Beach Club Resort", 6, "Walk", True),
+    ("Disney's Beach Club Resort", "Disney's Yacht Club Resort", 4, "Walk", True),
+    ("Disney's Yacht Club Resort", "Disney's Boardwalk Inn", 10, "Walk", True),
+    ("Epcot International Gateway", "Disney's Boardwalk Inn", 7, "Walk", True),
+    ("Disney's Boardwalk Inn", "Swan and Dolphin Hotel", 7, "Walk", True),
+    ("Disney's Yacht Club Resort", "Swan and Dolphin Hotel", 9, "Walk", True),
+
     ("Disney Springs Marketplace", "Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", 20, "Walk", False),
     ("Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", "Disney Springs Marketplace", 1, "Walk", False),
     ("Disney Springs Marketplace", "Disney Springs Marketplace - Purple Flag Sassagoula River Ferry Boat", 20, "Walk", False),

@@ -62,6 +62,10 @@
     "Epcot International Gateway": "EP_INTGATE",
     "Hollywood Studios": "HS_MAIN",
     "Disney's Riviera Resort": "DISNEY'S_RIVIERA_RESORT",
+    "Disney's Boardwalk Inn": "BWI_MAIN",
+    "Disney's Beach Club Resort": "BC_MAIN",
+    "Disney's Yacht Club Resort": "YC_MAIN",
+    "Swan and Dolphin Hotel": "SND_MAIN",
     "Disney Springs Marketplace": "DS_MARKET",
     "Disney Springs Landing": "DS_LANDING",
     "Disney's Old Key West Resort": "OKW_MAIN",
@@ -70,12 +74,8 @@
     "Disney's Port Orleans French Quarter Resort": "POFQ_MAIN",
     "Disney Springs West Side": "DS_WEST",
     "Disney Springs": "DS_MAIN",
-    "Disney's Yacht Club Resort": "YC_MAIN",
     "Disney's Yacht and Beach Club Resorts Shared Dock": "DISNEY'S_YACHT_AND_BEACH_CLUB_RESORTS_SHARED_DOCK",
-    "Disney's Beach Club Resort": "BC_MAIN",
-    "Disney's Boardwalk Inn": "BWI_MAIN",
     "Epcot": "EP_MAIN",
-    "Swan and Dolphin Hotel": "SND_MAIN",
     "Disney's Winter Summerland Miniature Golf": "WS_MAIN",
     "Disney's Blizzard Beach Water Park": "BB_MAIN",
     "Disney's Fantasia Gardens & Fairways Miniature Golf": "FG_MAIN",
@@ -698,6 +698,55 @@
       "from": "CBR_MAIN",
       "to": "DISNEY'S_RIVIERA_RESORT",
       "weight": 10,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "EP_INTGATE",
+      "to": "BWI_MAIN",
+      "weight": 15,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "EP_INTGATE",
+      "to": "BC_MAIN",
+      "weight": 6,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "BC_MAIN",
+      "to": "YC_MAIN",
+      "weight": 4,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "YC_MAIN",
+      "to": "BWI_MAIN",
+      "weight": 10,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "EP_INTGATE",
+      "to": "BWI_MAIN",
+      "weight": 7,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "BWI_MAIN",
+      "to": "SND_MAIN",
+      "weight": 7,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "YC_MAIN",
+      "to": "SND_MAIN",
+      "weight": 9,
       "mode": "Walk",
       "bidirectional": true
     },
