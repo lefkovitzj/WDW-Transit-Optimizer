@@ -139,8 +139,6 @@ walks = [
     ("Epcot International Gateway", "Epcot International Gateway - Epcot Skyliner", 1, "Walk", True),
     ("Epcot International Gateway - Crescent Lake Friendship Boat to Epcot", "Epcot International Gateway", 1, "Walk", False),
     ("Hollywood Studios - Crescent Lake Friendship Boat to Hollywood Studios", "Hollywood Studios", 1, "Walk", False),
-    ("Disney's Old Key West Resort", "Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat", 10, "Walk", False),
-    ("Disney's Old Key West Resort - Green Flag Sassagoula River Ferry Boat", "Disney's Old Key West Resort", 1, "Walk", False),
     
     ("Disney Springs Marketplace", "Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", 20, "Walk", False),
     ("Disney Springs Marketplace - Yellow Flag Sassagoula River Ferry Boat", "Disney Springs Marketplace", 1, "Walk", False),
@@ -200,9 +198,6 @@ walks = [
     ("Swan and Dolphin Hotel", "Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Hollywood Studios", 20, "Walk", False),
     ("Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Epcot", "Swan and Dolphin Hotel", 1, "Walk", False),
     ("Swan and Dolphin Hotel - Crescent Lake Friendship Boat to Hollywood Studios", "Swan and Dolphin Hotel", 1, "Walk", False),
-
-    ("Disney's Saratoga Springs Resort and Tree Houses", "Disney's Saratoga Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", 1, "Walk", False),
-    ("Disney's Saratoga Springs Resort and Tree Houses - Blue Flag Sassagoula River Ferry Boat", "Disney's Saratoga Springs Resort and Tree Houses", 20, "Walk", False),
 
     ("Disney's Winter Summerland Miniature Golf", "Disney's Blizzard Beach Water Park", 5, "Walk", True),
     ("Disney's Fantasia Gardens & Fairways Miniature Golf", "Disney's Boardwalk Inn", 15, "Walk", True),

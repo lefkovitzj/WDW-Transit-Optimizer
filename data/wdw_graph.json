@@ -61,9 +61,9 @@
     "Disney Vacation Club Riviera Resort": "RIV_MAIN",
     "Epcot International Gateway": "EP_INTGATE",
     "Hollywood Studios": "HS_MAIN",
-    "Disney's Old Key West Resort": "OKW_MAIN",
     "Disney Springs Marketplace": "DS_MARKET",
     "Disney Springs Landing": "DS_LANDING",
+    "Disney's Old Key West Resort": "OKW_MAIN",
     "Disney's Saratoga Springs Resort and Tree Houses": "SSR_MAIN",
     "Disney's Port Orleans Riverside Resort": "POR_MAIN",
     "Disney's Port Orleans French Quarter Resort": "POFQ_MAIN",
@@ -694,20 +694,6 @@
       "bidirectional": false
     },
     {
-      "from": "OKW_MAIN",
-      "to": "OKW_MAIN_GREEN_FLAG_SASSAGOULA_RIVER_FERRY_BOAT",
-      "weight": 10,
-      "mode": "Walk",
-      "bidirectional": false
-    },
-    {
-      "from": "OKW_MAIN_GREEN_FLAG_SASSAGOULA_RIVER_FERRY_BOAT",
-      "to": "OKW_MAIN",
-      "weight": 1,
-      "mode": "Walk",
-      "bidirectional": false
-    },
-    {
       "from": "DS_MARKET",
       "to": "DS_MARKET_YELLOW_FLAG_SASSAGOULA_RIVER_FERRY_BOAT",
       "weight": 20,
@@ -759,6 +745,13 @@
     {
       "from": "DS_LANDING_GREEN_FLAG_SASSAGOULA_RIVER_FERRY_BOAT",
       "to": "DS_LANDING",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": false
+    },
+    {
+      "from": "OKW_MAIN_GREEN_FLAG_SASSAGOULA_RIVER_FERRY_BOAT",
+      "to": "OKW_MAIN",
       "weight": 1,
       "mode": "Walk",
       "bidirectional": false
@@ -1026,20 +1019,6 @@
       "from": "SND_MAIN_CRESCENT_LAKE_FRIENDSHIP_BOAT_TO_HOLLYWOOD_STUDIOS",
       "to": "SND_MAIN",
       "weight": 1,
-      "mode": "Walk",
-      "bidirectional": false
-    },
-    {
-      "from": "SSR_MAIN",
-      "to": "SSR_MAIN_BLUE_FLAG_SASSAGOULA_RIVER_FERRY_BOAT",
-      "weight": 1,
-      "mode": "Walk",
-      "bidirectional": false
-    },
-    {
-      "from": "SSR_MAIN_BLUE_FLAG_SASSAGOULA_RIVER_FERRY_BOAT",
-      "to": "SSR_MAIN",
-      "weight": 20,
       "mode": "Walk",
       "bidirectional": false
     },
