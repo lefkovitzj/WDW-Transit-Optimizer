@@ -71,6 +71,7 @@
     "Disney Springs": "DS_MAIN",
     "Disney's Yacht and Beach Club Resorts": "YBC_MAIN",
     "Disney's Boardwalk Inn": "BWI_MAIN",
+    "Epcot": "EP_MAIN",
     "Swan and Dolphin Hotel": "SND_MAIN",
     "Disney's Winter Summerland Miniature Golf": "WS_MAIN",
     "Disney's Blizzard Beach Water Park": "BB_MAIN",
@@ -80,7 +81,6 @@
     "Disney's All-Star Music Resort": "AS_MUSIC_MAIN",
     "Disney's All-Star Sports Resort": "AS_SPORTS_MAIN",
     "Disney's Coronado Springs Resort": "CSR_MAIN",
-    "Epcot": "EP_MAIN",
     "Animal Kingdom": "AK_MAIN",
     "Disney Springs - Landing": "DS_LANDING",
     "Disney Springs - Marketplace": "DS_MARKET",
@@ -955,6 +955,20 @@
       "weight": 20,
       "mode": "Walk",
       "bidirectional": false
+    },
+    {
+      "from": "EP_INTGATE",
+      "to": "EP_MAIN",
+      "weight": 10,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "EP_MAIN_EPMON",
+      "to": "EP_MAIN",
+      "weight": 1,
+      "mode": "Walk",
+      "bidirectional": true
     },
     {
       "from": "HS_MAIN",

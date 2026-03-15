@@ -186,6 +186,8 @@ walks = [
     
     ("Epcot International Gateway", "Epcot International Gateway - Crescent Lake Friendship Boat to Hollywood Studios", 20, "Walk", False),
     ("Epcot International Gateway - Crescent Lake Friendship Boat to Epcot", "Epcot International Gateway", 1, "Walk", False),
+    ("Epcot International Gateway", "Epcot", 10, "Walk", True),
+    ("Epcot - Epcot Monorail", "Epcot", 1, "Walk", True),
     
     ("Hollywood Studios", "Hollywood Studios - Crescent Lake Friendship Boat to Epcot", 20, "Walk", False),
     ("Hollywood Studios - Crescent Lake Friendship Boat to Hollywood Studios", "Hollywood Studios", 1, "Walk", False),
