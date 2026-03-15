@@ -751,6 +751,27 @@
       "bidirectional": true
     },
     {
+      "from": "POLY_MAIN",
+      "to": "GF_MAIN",
+      "weight": 13,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "GF_MAIN",
+      "to": "MK_MAIN",
+      "weight": 17,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
+      "from": "MK_MAIN",
+      "to": "CONT_MAIN",
+      "weight": 11,
+      "mode": "Walk",
+      "bidirectional": true
+    },
+    {
       "from": "DS_MARKET",
       "to": "DS_MARKET_YELLOW_FLAG_SASSAGOULA_RIVER_FERRY_BOAT",
       "weight": 20,
