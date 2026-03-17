@@ -1,23 +1,28 @@
-<div class="menu bg-base-100 w-full rounded-box shadow-xl border border-base-300">
-    {% if matches %}
-        {% for name, loc_id in matches.items() %}
-        <li>
-            <button type="button" 
-                    class="hover:bg-primary hover:text-white w-full text-left p-2"
-                    {# Use double quotes for the JS object to allow single quotes in names #}
-                    hx-on:click='
-                        const container = this.closest(".relative");
-                        const input = container.querySelector("input[type=text]");
-                        htmx.trigger(input, "itemSelected", {
-                            "val": "{{ loc_id }}", 
-                            "label": {{ name | tojson }}
-                        });
-                    '>
-                {{ name }}
-            </button>
-        </li>
-        {% endfor %}
-    {% else %}
-        <li class="disabled"><span class="text-error font-medium p-2">No locations found</span></li>
-    {% endif %}
+<div class="w-full min-w-0 max-w-full overflow-hidden rounded-lg border border-slate-700 bg-slate-900 shadow-soft" role="listbox">
+  {% if matches %}
+    <ul class="max-h-72 overflow-y-auto overflow-x-hidden py-1" role="list">
+      {% for name, loc_id in matches.items() %}
+      <li role="presentation">
+        <button
+          type="button"
+          class="w-full min-w-0 max-w-full px-3 py-2 text-left text-sm text-slate-200 hover:bg-slate-800 hover:text-white focus:bg-slate-800 focus:text-white focus:outline-none"
+          role="option"
+          hx-on:click='
+            const container = this.closest(".relative");
+            const input = container.querySelector("input[type=text]");
+            htmx.trigger(input, "item-selected", {
+              "val": "{{ loc_id }}",
+              "label": {{ name | tojson }}
+            });
+          '
+          title="{{ name }}"
+        >
+          <span class="block truncate">{{ name }}</span>
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <div class="px-3 py-2 text-sm font-medium text-amber-300">No locations found</div>
+  {% endif %}
 </div>

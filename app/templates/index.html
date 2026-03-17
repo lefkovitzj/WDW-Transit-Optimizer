@@ -1,135 +1,301 @@
 {% extends "base.html" %}
 
-{% block content %}
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-    
-    <div class="card bg-base-100 shadow-xl">
-        <div class="card-body">
-            <h2 class="card-title text-2xl mb-4 text-primary">Plan Your Journey</h2>
-            
-            <form hx-post="/plan" 
-                hx-target="#itinerary-result" 
-                hx-indicator="#loading-spinner"
-                class="space-y-4">
-                <div class="form-control relative pt-4 border-t border-base-300 mt-4">
-                    <label class="label"><span class="label-text font-bold uppercase text-xs">Starting Point</span></label>
-                    <input type="text" 
-                           id="start-display"
-                           placeholder="Where are you starting?" 
-                           class="input input-bordered w-full"
-                           hx-post="/search-locations" 
-                           hx-trigger="keyup changed delay:200ms, focus" 
-                           hx-target="#start-results"
-                           hx-vals='js:{"q": document.getElementById("start-display").value}'
-                           hx-on:item-selected="
-                                document.getElementById('start-dest-input').value = event.detail.val;
-                                this.value = event.detail.label;
-                                document.getElementById('start-results').innerHTML = '';
-                           "
-                           autocomplete="off" />
-                    
-                    <input type="hidden" name="start" id="start-dest-input">
-                    <div id="start-results" class="absolute z-50 w-full top-24"></div>
-                </div>
+{% block title %}Dashboard · WDW Transit Optimizer{% endblock %}
 
-                <div id="stops-container" class="space-y-4">
-                    <label class="label"><span class="label-text font-bold uppercase text-xs text-secondary">Must-Visit Stops</span></label>
-                    </div>
-
-                <button type="button" onclick="addStopField()" class="btn btn-outline btn-secondary btn-sm w-full mt-2">
-                    + Add Intermediate Stop
-                </button>
-
-                <div class="form-control relative pt-4 border-t border-base-300 mt-4">
-                    <label class="label"><span class="label-text font-bold uppercase text-xs">Final Destination</span></label>
-                    <input type="text" 
-                           id="final-display"
-                           placeholder="Where are you ending?" 
-                           class="input input-bordered w-full"
-                           hx-post="/search-locations" 
-                           hx-trigger="keyup changed delay:200ms, focus" 
-                           hx-target="#final-results"
-                           hx-vals='js:{"q": document.getElementById("final-display").value}'
-                           hx-on:item-selected="
-                                document.getElementById('final-dest-input').value = event.detail.val;
-                                this.value = event.detail.label;
-                                document.getElementById('final-results').innerHTML = '';
-                           "
-                           autocomplete="off" />
-                    
-                    <input type="hidden" name="end" id="final-dest-input">
-                    <div id="final-results" class="absolute z-50 w-full top-24"></div>
-                </div>
-
-                <button type="submit" class="btn btn-primary w-full mt-6 shadow-lg">
-                    Calculate Optimized Route 🚀
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <div class="lg:col-span-2" id="itinerary-result">
-        <div id="loading-spinner" class="htmx-indicator flex justify-center p-20">
-            <span class="loading loading-spinner loading-lg text-primary"></span>
-            <span class="ml-4 font-bold">Magic in progress...</span>
-        </div>
-        <div class="alert bg-base-100 shadow-md">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <div>
-                <h3 class="font-bold">Ready to explore?</h3>
-                <div class="text-xs">Select your starting resort and where you want to go. The optimizer will handle the rest.</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    let stopCount = 0;
-
-    function addStopField() {
-        stopCount++;
-        const container = document.getElementById('stops-container');
-        const stopId = `stop-${stopCount}`;
-        
-        const html = `
-            <div class="form-control relative animate-fadeIn" id="container-${stopId}">
-                <div class="flex gap-2">
-                    <input type="text" 
-                           id="display-${stopId}"
-                           placeholder="Search for a stop..." 
-                           class="input input-bordered w-full input-sm"
-                           hx-post="/search-locations" 
-                           hx-trigger="keyup changed delay:200ms, focus" 
-                           hx-target="#results-${stopId}"
-                           hx-vals='js:{"q": document.getElementById("display-${stopId}").value}'
-                           hx-on:item-selected="
-                                document.getElementById('input-${stopId}').value = event.detail.val;
-                                this.value = event.detail.label;
-                                document.getElementById('results-${stopId}').innerHTML = '';
-                           "
-                           autocomplete="off" />
-                    <button type="button" onclick="this.closest('.form-control').remove()" class="btn btn-square btn-sm btn-error btn-outline">✕</button>
-                </div>
-                <input type="hidden" name="stops" id="input-${stopId}">
-                <div id="results-${stopId}" class="absolute z-50 w-full top-10"></div>
-            </div>
-        `;
-        
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = html;
-        const newField = tempDiv.firstElementChild;
-        container.appendChild(newField);
-        
-        // Re-initialize HTMX for the new dynamic elements
-        htmx.process(newField);
-    }
-</script>
-
+{% block head_extras %}
 <style>
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(-5px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    .animate-fadeIn { animation: fadeIn 0.2s ease-out forwards; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fadeIn { animation: fadeIn 0.18s ease-out forwards; }
+
+  .htmx-indicator { display: none; }
+
+  /* show spinner only when we explicitly toggle it */
+  .spinner-active { display: flex !important; }
 </style>
+{% endblock %}
+
+{% block content %}
+<div class="space-y-6">
+  <!-- Hero -->
+  <section class="rounded-2xl border border-slate-800 bg-gradient-to-r from-wdw-navy via-wdw-navy2 to-wdw-teal p-6 shadow-soft">
+    <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-white/80">Walt Disney World Transit Planner</p>
+        <h1 class="mt-1 text-2xl font-bold text-white">Optimize multi-stop routes with less waiting and backtracking</h1>
+        <p class="mt-2 max-w-2xl text-sm text-white/85">
+          Built to help you move between resorts, parks, and destinations more efficiently using WDW transportation options.
+        </p>
+      </div>
+      <a href="#planner"
+         class="inline-flex items-center justify-center rounded-lg bg-white/95 px-4 py-2 text-sm font-semibold text-wdw-navy hover:bg-white">
+        Start Planning
+      </a>
+    </div>
+  </section>
+
+  <div id="planner" class="grid grid-cols-1 gap-6 xl:grid-cols-3">
+    <section class="relative z-40 xl:col-span-1 rounded-xl border border-slate-800 bg-slate-900 shadow-soft">
+      <header class="border-b border-slate-800 px-6 py-4">
+        <h2 class="text-xl font-semibold text-slate-100">Plan Your Journey</h2>
+        <p class="mt-1 text-sm text-slate-400">Build an optimized multi-stop itinerary across Walt Disney World.</p>
+      </header>
+
+      <div class="px-6 py-5">
+        <form hx-post="/plan" hx-target="#itinerary-result" class="space-y-5">
+          <div class="relative min-w-0" data-search-wrapper>
+            <label for="start-display" class="mb-1 block text-xs font-semibold uppercase tracking-wider text-slate-400">Starting Point</label>
+            <input
+              type="text"
+              id="start-display"
+              placeholder="Where are you starting?"
+              class="w-full rounded-lg border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-wdw-teal focus:ring-wdw-teal"
+              hx-post="/search-locations"
+              hx-trigger="keyup changed delay:200ms, focus"
+              hx-target="#start-results"
+              hx-vals='js:{"q": document.getElementById("start-display").value}'
+              hx-on:item-selected="document.getElementById('start-dest-input').value = event.detail.val; this.value = event.detail.label; document.getElementById('start-results').innerHTML = '';"
+              autocomplete="off"
+            />
+            <input type="hidden" name="start" id="start-dest-input" />
+            <div id="start-results" class="search-results absolute left-0 top-full mt-1 w-full z-[9999]"></div>
+          </div>
+
+          <div id="stops-container" class="space-y-3">
+            <label class="block text-xs font-semibold uppercase tracking-wide text-slate-400">Must-Visit Stops</label>
+          </div>
+
+          <button type="button" onclick="addStopField()"
+            class="w-full rounded-lg border border-slate-700 bg-slate-800 px-4 py-2 text-sm font-medium text-slate-200 hover:border-wdw-gold hover:text-white">
+            + Add Intermediate Stop
+          </button>
+
+          <div class="relative min-w-0" data-search-wrapper>
+            <label for="final-display" class="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-400">Final Destination</label>
+            <input
+              type="text"
+              id="final-display"
+              placeholder="Where are you ending?"
+              class="w-full rounded-lg border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-wdw-teal focus:ring-wdw-teal"
+              hx-post="/search-locations"
+              hx-trigger="keyup changed delay:200ms, focus"
+              hx-target="#final-results"
+              hx-vals='js:{"q": document.getElementById("final-display").value}'
+              hx-on:item-selected="document.getElementById('final-dest-input').value = event.detail.val; this.value = event.detail.label; document.getElementById('final-results').innerHTML = '';"
+              autocomplete="off"
+            />
+            <input type="hidden" name="end" id="final-dest-input" />
+            <div id="final-results" class="search-results absolute left-0 top-full mt-1 w-full z-[9999]"></div>
+          </div>
+
+          <button type="submit" class="w-full rounded-lg bg-wdw-teal px-4 py-2.5 text-sm font-semibold text-white hover:brightness-110">
+            Calculate Optimized Route
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section id="itinerary-result" class="relative z-0 xl:col-span-2 space-y-4">
+      <div id="loading-spinner" class="htmx-indicator items-center justify-center gap-3 rounded-xl border border-slate-800 bg-slate-900 p-10 shadow-soft">
+        <div class="h-6 w-6 animate-spin rounded-full border-2 border-slate-700 border-t-wdw-teal"></div>
+        <span class="text-sm font-medium text-slate-300">Computing optimal transit path...</span>
+      </div>
+
+      <div class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+        <div class="flex items-start gap-3">
+          <div class="mt-0.5 h-5 w-5 rounded-full bg-wdw-navy2 text-center text-xs font-bold leading-5 text-white">i</div>
+          <div>
+            <h3 class="font-semibold text-slate-100">Ready to explore?</h3>
+            <p class="mt-1 text-sm text-slate-300">
+              Select your starting resort, optional stops, and final destination. The optimizer will generate the most efficient route.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- About / Contribution / Contact -->
+  <section class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+    <article class="rounded-xl border border-slate-800 bg-slate-900 p-5 shadow-soft">
+      <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-300">About</h3>
+      <p class="mt-2 text-sm text-slate-400">
+        This tool helps estimate smarter point-to-point routing for WDW transit use cases. It is designed as a practical planning aid, not an official Disney source.
+      </p>
+      <a href="/about" class="mt-3 inline-block text-sm font-medium text-wdw-teal hover:underline">Learn more →</a>
+    </article>
+
+    <article class="rounded-xl border border-slate-800 bg-slate-900 p-5 shadow-soft">
+      <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-300">Developer Contribution</h3>
+      <p class="mt-2 text-sm text-slate-400">Contributions are welcome—issues, ideas, and pull requests.</p>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a class="rounded-md border border-slate-700 px-2.5 py-1 text-slate-200 hover:border-wdw-teal"
+           href="https://github.com/lefkovitzj/WDW-Transit-Optimizer" target="_blank" rel="noopener">Repository</a>
+      </div>
+      <a href="/contribute" class="mt-3 inline-block text-sm font-medium text-wdw-teal hover:underline">Contribution guide →</a>
+    </article>
+
+    <article class="rounded-xl border border-slate-800 bg-slate-900 p-5 shadow-soft">
+      <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-300">Contact</h3>
+      <p class="mt-2 text-sm text-slate-400">
+        Found inaccurate data, missing locations, or planning issues? Open a ticket and include steps/details.
+      </p>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a class="rounded-md border border-slate-700 px-2.5 py-1 text-slate-200 hover:border-wdw-gold"
+           href="https://github.com/lefkovitzj/WDW-Transit-Optimizer/issues/new/choose" target="_blank" rel="noopener">Report Issue</a>
+      </div>
+      <a href="/contact" class="mt-3 inline-block text-sm font-medium text-wdw-teal hover:underline">Contact options →</a>
+    </article>
+  </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  let stopCount = 0;
+  let currentHighlightIndex = -1;
+  let currentResultsContainer = null;
+  let lastKeyTime = 0;
+  let keyRepeatThrottle = 50; // ms between highlight updates
+
+  function clearAllSearchResults() {
+    document.querySelectorAll('.search-results').forEach(el => {
+      el.innerHTML = '';
+    });
+    currentResultsContainer = null;
+    currentHighlightIndex = -1;
+  }
+
+  function highlightResult(index) {
+    const buttons = currentResultsContainer?.querySelectorAll('button') || [];
+    buttons.forEach((btn, i) => {
+      btn.classList.toggle('bg-slate-700', i === index);
+      btn.classList.toggle('text-white', i === index);
+    });
+    currentHighlightIndex = index;
+
+    // Scroll highlighted button into view
+    if (buttons[index]) {
+      buttons[index].scrollIntoView({ block: 'nearest', behavior: 'auto' });
+    }
+  }
+
+  function selectCurrentHighlight() {
+    const buttons = currentResultsContainer?.querySelectorAll('button') || [];
+    if (currentHighlightIndex >= 0 && currentHighlightIndex < buttons.length) {
+      buttons[currentHighlightIndex].click();
+    }
+  }
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('[data-search-wrapper]')) {
+      clearAllSearchResults();
+    }
+  });
+
+  document.addEventListener('focus', (event) => {
+    if (event.target.matches('input[type="text"][hx-post="/search-locations"]')) {
+      const wrapper = event.target.closest('[data-search-wrapper]');
+      const resultsId = wrapper?.querySelector('.search-results')?.id;
+      currentResultsContainer = resultsId ? document.getElementById(resultsId) : null;
+      currentHighlightIndex = -1;
+    }
+  }, true);
+
+  document.addEventListener('blur', (event) => {
+    if (event.target.matches('input[type="text"][hx-post="/search-locations"]')) {
+      clearAllSearchResults();
+    }
+  }, true);
+
+  document.addEventListener('keydown', (event) => {
+    if (!currentResultsContainer || !event.target.matches('input[type="text"][hx-post="/search-locations"]')) return;
+
+    const buttons = currentResultsContainer.querySelectorAll('button');
+    if (buttons.length === 0) return;
+
+    const now = Date.now();
+    const isArrowKey = ['ArrowDown', 'ArrowUp'].includes(event.key);
+
+    // Throttle arrow key repeat to reduce lag
+    if (isArrowKey && now - lastKeyTime < keyRepeatThrottle) {
+      return;
+    }
+
+    switch (event.key) {
+      case 'ArrowDown':
+        event.preventDefault();
+        lastKeyTime = now;
+        currentHighlightIndex = Math.min(currentHighlightIndex + 1, buttons.length - 1);
+        highlightResult(currentHighlightIndex);
+        break;
+      case 'ArrowUp':
+        event.preventDefault();
+        lastKeyTime = now;
+        currentHighlightIndex = Math.max(currentHighlightIndex - 1, 0);
+        highlightResult(currentHighlightIndex);
+        break;
+      case 'Enter':
+      case ' ':
+        event.preventDefault();
+        selectCurrentHighlight();
+        event.target.blur();
+        break;
+      case 'Escape':
+        event.preventDefault();
+        clearAllSearchResults();
+        event.target.blur();
+        break;
+    }
+  });
+
+  document.body.addEventListener('htmx:afterSwap', (event) => {
+    if (event.detail.target.classList.contains('search-results') && event.detail.target.innerHTML.trim()) {
+      currentResultsContainer = event.detail.target;
+      currentHighlightIndex = -1;
+    }
+  });
+
+  function addStopField() {
+    stopCount++;
+    const container = document.getElementById('stops-container');
+    const stopId = `stop-${stopCount}`;
+
+    const html = `
+      <div class="relative z-20 focus-within:z-50 animate-fadeIn" id="container-${stopId}" data-search-wrapper>
+        <div class="flex gap-2">
+          <input
+            type="text"
+            id="display-${stopId}"
+            placeholder="Search for a stop..."
+            class="w-full rounded-lg border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-wdw-teal focus:ring-wdw-teal"
+            hx-post="/search-locations"
+            hx-trigger="keyup changed delay:200ms, focus"
+            hx-target="#results-${stopId}"
+            hx-vals='js:{"q": document.getElementById("display-${stopId}").value}'
+            hx-on:item-selected="
+              document.getElementById('input-${stopId}').value = event.detail.val;
+              this.value = event.detail.label;
+              document.getElementById('results-${stopId}').innerHTML = '';
+            "
+            autocomplete="off"
+          />
+          <button type="button" onclick="this.closest('#container-${stopId}').remove()"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 text-slate-400 hover:border-red-400 hover:text-red-300"
+            aria-label="Remove stop">✕</button>
+        </div>
+        <input type="hidden" name="stops" id="input-${stopId}">
+        <div id="results-${stopId}" class="search-results absolute left-0 top-full mt-1 w-full z-[10000]"></div>
+      </div>
+    `;
+
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = html;
+    const newField = tempDiv.firstElementChild;
+    container.appendChild(newField);
+    htmx.process(newField);
+  }
+</script>
 {% endblock %}
