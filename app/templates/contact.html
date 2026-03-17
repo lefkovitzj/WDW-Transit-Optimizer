@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Contact · WDW Transit Optimizer{% endblock %}
+
+{% block content %}
+<section class="space-y-4">
+  <div class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+    <h1 class="text-2xl font-bold text-slate-100">Contact</h1>
+    <p class="mt-2 text-sm text-slate-300">
+      For inaccuracies, missing locations, or questions, use the GitHub channels below.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+    <h2 class="text-lg font-semibold text-slate-100">Support Channels</h2>
+    <div class="mt-3 flex flex-wrap gap-2 text-sm">
+      <a class="rounded-md border border-slate-700 px-2.5 py-1 text-slate-200 hover:border-wdw-gold"
+         href="https://github.com/lefkovitzj/WDW-Transit-Optimizer/issues/new/choose" target="_blank" rel="noopener">Report an Issue</a>
+      <a class="rounded-md border border-slate-700 px-2.5 py-1 text-slate-200 hover:border-wdw-gold"
+         href="https://github.com/lefkovitzj/WDW-Transit-Optimizer/discussions" target="_blank" rel="noopener">Ask a Question</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

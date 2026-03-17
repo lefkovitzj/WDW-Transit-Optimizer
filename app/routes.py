@@ -98,3 +98,24 @@ async def plan_route(
         "locations": inverted_display_names,
         "result": result
     })
+
+@router.get("/about", response_class=HTMLResponse)
+async def about_page(request: Request):
+    return templates.TemplateResponse(
+        "about.html",
+        {"request": request},
+    )
+
+@router.get("/contribute", response_class=HTMLResponse)
+async def contribute_page(request: Request):
+    return templates.TemplateResponse(
+        "contribute.html",
+        {"request": request},
+    )
+
+@router.get("/contact", response_class=HTMLResponse)
+async def contact_page(request: Request):
+    return templates.TemplateResponse(
+        "contact.html",
+        {"request": request},
+    )
