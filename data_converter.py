@@ -137,7 +137,7 @@ def generate_busses(final_data):
                 bus_destination_stop_id = f"{bus_destination_id}_BUS"
 
                 bus_connections.append({
-                    "from": bus_source_stop_id, "to": bus_destination_stop_id, "weight": weight, "mode": "Bus", "bidirectional": False
+                    "from": bus_source_stop_id, "to": bus_destination_stop_id, "weight": weight, "mode": "Bus", "bidirectional": True
                 })
 
     # Park hopper busses.

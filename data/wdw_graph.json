@@ -1266,35 +1266,35 @@
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POLY_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POLY_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POLY_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POLY_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "GF_MAIN",
@@ -1315,35 +1315,35 @@
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "GF_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "GF_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "GF_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "GF_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CONT_MAIN",
@@ -1364,35 +1364,35 @@
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CONT_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CONT_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CONT_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CONT_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "FTW_MAIN",
@@ -1413,42 +1413,42 @@
       "to": "EP_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "FTW_MAIN_BUS",
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "FTW_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "FTW_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "FTW_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "FTW_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "WL_MAIN",
@@ -1469,42 +1469,42 @@
       "to": "EP_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "WL_MAIN_BUS",
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "WL_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "WL_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "WL_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "WL_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POP_MAIN",
@@ -1525,35 +1525,35 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POP_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POP_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POP_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POP_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AOA_MAIN",
@@ -1574,35 +1574,35 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AOA_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AOA_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AOA_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AOA_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CBR_MAIN",
@@ -1623,35 +1623,35 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CBR_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CBR_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CBR_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CBR_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "RIV_MAIN",
@@ -1672,35 +1672,35 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "RIV_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "RIV_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "RIV_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "RIV_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "SND_MAIN",
@@ -1721,35 +1721,35 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "SND_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "SND_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "SND_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "SND_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "YC_MAIN",
@@ -1770,35 +1770,35 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "YC_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "YC_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "YC_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "YC_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "BC_MAIN",
@@ -1819,35 +1819,35 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "BC_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "BC_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "BC_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "BC_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "BWI_MAIN",
@@ -1868,35 +1868,35 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "BWI_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "BWI_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "BWI_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "BWI_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POFQ_MAIN",
@@ -1917,42 +1917,42 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POFQ_MAIN_BUS",
       "to": "EP_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POFQ_MAIN_BUS",
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POFQ_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POFQ_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POFQ_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POR_MAIN",
@@ -1973,42 +1973,42 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POR_MAIN_BUS",
       "to": "EP_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POR_MAIN_BUS",
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POR_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POR_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "POR_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "SSR_MAIN",
@@ -2029,42 +2029,42 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "SSR_MAIN_BUS",
       "to": "EP_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "SSR_MAIN_BUS",
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "SSR_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "SSR_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "SSR_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "OKW_MAIN",
@@ -2085,42 +2085,42 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "OKW_MAIN_BUS",
       "to": "EP_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "OKW_MAIN_BUS",
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "OKW_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "OKW_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "OKW_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AKL_MAIN",
@@ -2141,49 +2141,49 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AKL_MAIN_BUS",
       "to": "EP_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AKL_MAIN_BUS",
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AKL_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AKL_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AKL_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AKL_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MOVIE_MAIN",
@@ -2204,49 +2204,49 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MOVIE_MAIN_BUS",
       "to": "EP_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MOVIE_MAIN_BUS",
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MOVIE_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MOVIE_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MOVIE_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MOVIE_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MUSIC_MAIN",
@@ -2267,49 +2267,49 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MUSIC_MAIN_BUS",
       "to": "EP_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MUSIC_MAIN_BUS",
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MUSIC_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MUSIC_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MUSIC_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_MUSIC_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_SPORTS_MAIN",
@@ -2330,49 +2330,49 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_SPORTS_MAIN_BUS",
       "to": "EP_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_SPORTS_MAIN_BUS",
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_SPORTS_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_SPORTS_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_SPORTS_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "AS_SPORTS_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CSR_MAIN",
@@ -2393,49 +2393,49 @@
       "to": "MK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CSR_MAIN_BUS",
       "to": "EP_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CSR_MAIN_BUS",
       "to": "HS_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CSR_MAIN_BUS",
       "to": "AK_MAIN_BUS",
       "weight": 20,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CSR_MAIN_BUS",
       "to": "DS_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CSR_MAIN_BUS",
       "to": "BB_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "CSR_MAIN_BUS",
       "to": "TL_MAIN_BUS",
       "weight": 25,
       "mode": "Bus",
-      "bidirectional": false
+      "bidirectional": true
     },
     {
       "from": "MK_MAIN_BUS",
