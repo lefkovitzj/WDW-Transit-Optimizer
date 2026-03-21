@@ -123,14 +123,14 @@
     </div>
 
     <div class="mt-5 grid grid-cols-1 gap-3 lg:grid-cols-2">
-      <div class="rounded-lg border border-slate-800 bg-slate-950 p-4">
+      <div class="rounded-lg border border-slate-800 bg-slate-950 p-4 min-w-0">
         <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Sample Tuple (data/raw_data.py)</p>
-        <pre class="overflow-x-auto text-xs text-slate-200"><code>("Ticket & Transportation Center - Ferry", "Magic Kingdom", 11, "Ferry", True),</code></pre>
+        <pre class="text-xs text-slate-200"><code class="whitespace-pre-wrap break-all">("Ticket &amp; Transportation Center - Ferry", "Magic Kingdom", 11, "Ferry", True),</code></pre>
       </div>
 
-      <div class="rounded-lg border border-slate-800 bg-slate-950 p-4">
+      <div class="rounded-lg border border-slate-800 bg-slate-950 p-4 min-w-0">
         <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Generated JSON Edge (data/wdw_graph.json)</p>
-        <pre class="overflow-x-auto text-xs text-slate-200"><code>    {
+        <pre class="text-xs text-slate-200"><code class="whitespace-pre-wrap break-words">    {
       "from": "TTC_MAIN_FERRY",
       "to": "MK_MAIN",
       "weight": 11,
