@@ -1,7 +1,7 @@
 """
 Project Name: WDW-Transit-Optimizer
 File Name: app/routes.py
-Description: Routes for the WDW Transit Optimizer application.
+Description: Routes for the WDW Wayfinder application.
 Author: Joseph Lefkovitz (github.com/lefkovitzj)
 Last Modified: 1/10/2026
 """

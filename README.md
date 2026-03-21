@@ -6,7 +6,7 @@
 
 <br />
 <div align="center">
-  <h3 align="center">WDW Transit Optimizer</h3>
+  <h3 align="center">WDW Wayfinder</h3>
 
   <p align="center">
     A FastAPI web app that computes optimized Walt Disney World transit itineraries using Dijkstra + Held-Karp TSP.
@@ -26,7 +26,7 @@
 
 ## About The Project
 
-WDW Transit Optimizer helps plan Disney transit routes between resorts, parks, and hubs.  
+WDW Wayfinder helps plan Disney transit routes between resorts, parks, and hubs.  
 It combines:
 
 - **Mode-aware shortest paths** (Dijkstra)

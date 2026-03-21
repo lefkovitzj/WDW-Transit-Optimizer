@@ -1,7 +1,7 @@
 """
 Project Name: WDW-Transit-Optimizer
 File Name: app/main.py
-Description: Main application entry point for the WDW Transit Optimizer.
+Description: Main application entry point for the WDW Wayfinder.
 Author: Joseph Lefkovitz (github.com/lefkovitzj)
 Last Modified: 1/10/2026
 """

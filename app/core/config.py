@@ -10,8 +10,8 @@ Last Modified: 1/10/2026
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
-    """Configuration settings for the WDW Transit Optimizer web application."""
-    app_name: str = "WDW Transit Optimizer"
+    """Configuration settings for the WDW Wayfinder web application."""
+    app_name: str = "WDW Wayfinder"
     GRAPH_DATA_PATH: str = "data/wdw_master_graph.json"
     DATABASE_URL: str = "sqlite:///./data/wdw_app.db"
     DEBUG: bool = False
