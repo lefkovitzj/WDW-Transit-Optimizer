@@ -23,21 +23,22 @@
   <section class="rounded-2xl border border-slate-800 bg-gradient-to-r from-wdw-navy via-wdw-navy2 to-wdw-teal p-6 shadow-soft">
     <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
       <div>
-        <p class="text-xs font-semibold uppercase tracking-wider text-white/80">Walt Disney World Transit Planner</p>
-        <h1 class="mt-1 text-2xl font-bold text-white">Optimize multi-stop routes with less waiting and backtracking</h1>
-        <p class="mt-2 max-w-2xl text-sm text-white/85">
-          Built to help you move between resorts, parks, and destinations more efficiently using WDW transportation options.
+        <p class="text-xs font-semibold uppercase tracking-wider text-white/80">Walt Disney World Transit Optimizer</p>
+        <h1 class="mt-1 text-2xl font-bold text-white lg:text-4xl xl:text-5xl">Navigate the Magic, Faster.</h1>
+        <p class="mt-2 max-w-2xl text-sm text-slate-400">
+          The most efficient routes between Disney Resorts and Parks — powered by comprehensive transit data.
         </p>
       </div>
       <a href="#planner"
+         id="start-planning-btn"
          class="inline-flex items-center justify-center rounded-lg bg-white/95 px-4 py-2 text-sm font-semibold text-wdw-navy hover:bg-white">
         Start Planning
       </a>
     </div>
   </section>
 
-  <div id="planner" class="grid grid-cols-1 gap-6 xl:grid-cols-3">
-    <section class="relative z-40 xl:col-span-1 rounded-xl border border-slate-800 bg-slate-900 shadow-soft">
+  <div id="planner" class="scroll-mt-20 grid grid-cols-1 gap-6 xl:grid-cols-3">
+    <section class="relative z-0 xl:col-span-1 rounded-xl border border-slate-800 bg-slate-900 shadow-soft">
       <header class="border-b border-slate-800 px-6 py-4">
         <h2 class="text-xl font-semibold text-slate-100">Plan Your Journey</h2>
         <p class="mt-1 text-sm text-slate-400">Build an optimized multi-stop itinerary across Walt Disney World.</p>
@@ -98,22 +99,22 @@
     </section>
 
     <section id="itinerary-result" class="relative z-0 xl:col-span-2 space-y-4">
-      <div id="loading-spinner" class="htmx-indicator items-center justify-center gap-3 rounded-xl border border-slate-800 bg-slate-900 p-10 shadow-soft">
-        <div class="h-6 w-6 animate-spin rounded-full border-2 border-slate-700 border-t-wdw-teal"></div>
-        <span class="text-sm font-medium text-slate-300">Computing optimal transit path...</span>
-      </div>
-
       <div class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
         <div class="flex items-start gap-3">
           <div class="mt-0.5 h-5 w-5 rounded-full bg-wdw-navy2 text-center text-xs font-bold leading-5 text-white">i</div>
           <div>
             <h3 class="font-semibold text-slate-100">Ready to explore?</h3>
             <p class="mt-1 text-sm text-slate-300">
-              Select your starting resort, optional stops, and final destination. The optimizer will generate the most efficient route.
+              Select your starting location, optional intermediate stops, and final destination. The optimizer will generate the most efficient route.
             </p>
           </div>
         </div>
       </div>
+      <div id="loading-spinner" class="htmx-indicator items-center justify-center gap-3 rounded-xl border border-slate-800 bg-slate-900 p-10 shadow-soft">
+        <div class="h-6 w-6 animate-spin rounded-full border-2 border-slate-700 border-t-wdw-teal"></div>
+        <span class="text-sm font-medium text-slate-300">Computing optimal transit path...</span>
+      </div>
+
     </section>
   </div>
 
@@ -122,31 +123,33 @@
     <article class="rounded-xl border border-slate-800 bg-slate-900 p-5 shadow-soft">
       <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-300">About</h3>
       <p class="mt-2 text-sm text-slate-400">
-        This tool helps estimate smarter point-to-point routing for WDW transit use cases. It is designed as a practical planning aid, not an official Disney source.
+        Official apps often miss the cleverest connections and lack the complexity of multi-stop routing. WDW Wayfinder uses a custom directed-graph algorithm to calculate the most efficient paths across the entire Walt Disney World transit network.
       </p>
-      <a href="/about" class="mt-3 inline-block text-sm font-medium text-wdw-teal hover:underline">Learn more →</a>
-    </article>
-
-    <article class="rounded-xl border border-slate-800 bg-slate-900 p-5 shadow-soft">
-      <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-300">Developer Contribution</h3>
-      <p class="mt-2 text-sm text-slate-400">Contributions are welcome—issues, ideas, and pull requests.</p>
-      <div class="mt-3 flex flex-wrap gap-2 text-sm">
-        <a class="rounded-md border border-slate-700 px-2.5 py-1 text-slate-200 hover:border-wdw-teal"
-           href="https://github.com/lefkovitzj/WDW-Transit-Optimizer" target="_blank" rel="noopener">Repository</a>
-      </div>
-      <a href="/contribute" class="mt-3 inline-block text-sm font-medium text-wdw-teal hover:underline">Contribution guide →</a>
+      <a href="/about" class="mt-3 inline-block text-sm font-medium text-wdw-teal hover:underline">How it works →</a>
     </article>
 
     <article class="rounded-xl border border-slate-800 bg-slate-900 p-5 shadow-soft">
       <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-300">Contact</h3>
       <p class="mt-2 text-sm text-slate-400">
-        Found inaccurate data, missing locations, or planning issues? Open a ticket and include steps/details.
+        Found inaccurate data, missing locations, or planning issues? Open an issue or propose a fix!
       </p>
       <div class="mt-3 flex flex-wrap gap-2 text-sm">
         <a class="rounded-md border border-slate-700 px-2.5 py-1 text-slate-200 hover:border-wdw-gold"
            href="https://github.com/lefkovitzj/WDW-Transit-Optimizer/issues/new/choose" target="_blank" rel="noopener">Report Issue</a>
       </div>
       <a href="/contact" class="mt-3 inline-block text-sm font-medium text-wdw-teal hover:underline">Contact options →</a>
+    </article>
+
+    <article class="rounded-xl border border-slate-800 bg-slate-900 p-5 shadow-soft">
+      <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-300">Developer Contribution</h3>
+      <p class="mt-2 text-sm text-slate-400">
+        Wayfinder is powered by an open-source dataset of transit nodes and edges. Whether you're a developer looking to optimize the routing logic or a frequent guest with updated boat schedules, let's map the magic together.
+      </p>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a class="rounded-md border border-slate-700 px-2.5 py-1 text-slate-200 hover:border-wdw-teal"
+           href="https://github.com/lefkovitzj/WDW-Transit-Optimizer" target="_blank" rel="noopener">Repository</a>
+      </div>
+      <a href="/contribute" class="mt-3 inline-block text-sm font-medium text-wdw-teal hover:underline">Contribution guide →</a>
     </article>
   </section>
 </div>
@@ -159,6 +162,25 @@
   let currentResultsContainer = null;
   let lastKeyTime = 0;
   let keyRepeatThrottle = 50; // ms between highlight updates
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const startBtn = document.getElementById('start-planning-btn');
+    const planner = document.getElementById('planner');
+    const startInput = document.getElementById('start-display');
+
+    if (!startBtn || !planner || !startInput) return;
+
+    startBtn.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      planner.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // focus after the smooth scroll starts
+      setTimeout(() => {
+        startInput.focus({ preventScroll: true });
+      }, 450);
+    });
+  });
 
   function clearAllSearchResults() {
     document.querySelectorAll('.search-results').forEach(el => {
