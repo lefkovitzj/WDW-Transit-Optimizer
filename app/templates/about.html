@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}About · WDW Wayfinder{% endblock %}
+
+{% block content %}
+<section class="space-y-6">
+  <header class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+    <h1 class="text-3xl font-bold tracking-tight text-slate-100">The Science of the Magic</h1>
+    <p class="mt-3 max-w-3xl text-sm leading-relaxed text-slate-300">
+      WDW Wayfinder approaches transportation planning as a systems problem — balancing route constraints,
+      transfer opportunities, and sequencing efficiency across Walt Disney World destinations.
+    </p>
+  </header>
+
+  <div class="grid gap-6 lg:grid-cols-12">
+    <div class="space-y-6 lg:col-span-12">
+      <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+        <h2 class="text-lg font-semibold text-slate-100">The Gap</h2>
+        <p class="mt-3 text-sm leading-relaxed text-slate-300">
+          Official planning tools are useful for direct point-to-point navigation, but they typically underperform for
+          resort-to-resort travel, chained itineraries, and multi-stop optimization. They often miss the practical
+          complexity of transfers, non-obvious routing options, and the tradeoffs required when building an efficient
+          day plan with several destinations.
+        </p>
+        <p class="mt-3 text-sm leading-relaxed text-slate-300">
+          There's just too much data and too many constraints for a human to reliably optimize without computational 
+          assistance, and that's where WDW Wayfinder comes in. By modeling the entire transit network as a 
+          directed graph and applying pathfinding and optimization techniques, the tool identifies the best possible 
+          routes across the entire system — not just the most obvious ones.
+        </p>
+      </article>
+
+      <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+        <h2 class="text-lg font-semibold text-slate-100">Example Applications</h2>
+        <div class="mt-4 grid gap-4 md:grid-cols-3">
+          <div class="rounded-lg border border-slate-800 bg-slate-950 p-4">
+            <h3 class="text-sm font-semibold text-slate-100">Efficient Hopping</h3>
+            <p class="mt-2 text-xs leading-relaxed text-slate-300">
+              Identify optimal routes between parks, resorts, and Disney Springs with transfer-aware pathfinding that accounts for real-world transit behavior.
+              Mathematically optimize a complex day of meal reservations, breaks, and park or resort hopping into the single most efficient itinerary.
+            </p>
+          </div>
+
+          <div class="rounded-lg border border-slate-800 bg-slate-950 p-4">
+            <h3 class="text-sm font-semibold text-slate-100">Asymmetric Travel Times</h3>
+            <p class="mt-2 text-xs leading-relaxed text-slate-300">
+              The tool's optimization backend is specifically designed to handle the asymmetric nature of Disney transit, where the most efficient way to travel from Point A to Point B is often fundamentally different than the return journey. 
+              The tool evaluates every possible combination of routes, modes, and transfer points to find the best path regardless of where you are or where you are going.
+            </p>
+          </div>
+
+          <div class="rounded-lg border border-slate-800 bg-slate-950 p-4">
+            <h3 class="text-sm font-semibold text-slate-100">Non-Park Destinations</h3>
+            <p class="mt-2 text-xs leading-relaxed text-slate-300">
+              The tool specifically maps decentralized destinations like Water Parks, Mini-Golf courses, and Disney Springs, which are often underserved by standard hub-and-spoke navigation focused on the main parks.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+        <h2 class="text-lg font-semibold text-slate-100">Algorithmic Efficiency</h2>
+        <p class="mt-3 text-sm leading-relaxed text-slate-300">
+          For multi-stop routing, the engine uses either 
+          <span class="font-mono rounded bg-slate-950 px-1.5 py-0.5 text-wdw-teal">Dijkstra's Algorithm</span> for simple point-to-point navigation
+          or a modified 
+          <span class="font-mono rounded bg-slate-950 px-1.5 py-0.5 text-wdw-teal">Held-Karp</span>
+          dynamic-programming approach to solve complex routing problems by representing them as a
+          <span class="font-mono rounded bg-slate-950 px-1.5 py-0.5 text-wdw-teal">Traveling Salesperson Problem (TSP)</span>
+          Although this is an NP-hard problem, it can be solved efficiently at practical trip sizes. Under the hood, transit relationships are modeled as a
+          <span class="font-mono rounded bg-slate-950 px-1.5 py-0.5 text-wdw-teal">Weighted Directed Multigraph</span>,
+          allowing asymmetric travel times and route-specific constraints to be represented accurately.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+{% endblock %}

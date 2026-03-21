@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Contact · WDW Wayfinder{% endblock %}
+
+{% block content %}
+<section class="space-y-4">
+  <div class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+    <h1 class="text-2xl font-bold text-slate-100">Contact</h1>
+    <p class="mt-2 text-sm text-slate-300">
+      WDW Wayfinder is built on a living dataset of transit nodes and edges.
+      Because Disney's transportation network — from boat routes to walking paths — is constantly evolving, your real-world observations are our most valuable resource. 
+      </p>
+      <p class="mt-2 text-sm text-slate-300">
+      If you encounter a missing route, a closed walkway, or an inaccurate timing, please let us know through our GitHub channels. Whether you're opening a formal issue or proposing a direct fix to the dataset, your contributions help keep the 'magic' optimized for the entire community.
+    </p>
+  </div>
+
+  <div class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+    <h2 class="text-lg font-semibold text-slate-100">Support Channels</h2>
+    <div class="mt-3 flex flex-wrap gap-2 text-sm">
+      <a class="rounded-md border border-slate-700 px-2.5 py-1 text-slate-200 hover:border-wdw-gold"
+         href="https://github.com/lefkovitzj/WDW-Transit-Optimizer/issues/new/choose" target="_blank" rel="noopener">Report an Issue</a>
+      <a class="rounded-md border border-slate-700 px-2.5 py-1 text-slate-200 hover:border-wdw-gold"
+         href="https://github.com/lefkovitzj/WDW-Transit-Optimizer/discussions" target="_blank" rel="noopener">Ask a Question</a>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+    <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+      <h3 class="text-base font-semibold text-teal-300">Network Health</h3>
+      <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-300">
+        <li><span class="text-slate-100">Nodes:</span> 113</li>
+        <li><span class="text-slate-100">Edges:</span> 337</li>
+        <li><span class="text-slate-100">Last Dataset Update:</span> March 16, 2026</li>
+      </ul>
+      <a href="https://github.com/lefkovitzj/WDW-Transit-Optimizer/tree/main/data" target="_blank" rel="noopener"
+         class="mt-4 inline-flex text-sm font-medium text-teal-300 hover:text-teal-200">
+        View Full Dataset →
+      </a>
+    </article>
+
+    <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+      <h3 class="text-base font-semibold text-teal-300">Project Lead</h3>
+      <p class="mt-3 text-sm text-slate-300">
+        Joseph Lefkovitz is a Junior Computer Science student at the University of Dayton,
+        leading development of the WDW Wayfinder with a focus on practical routing tools and clean UX.
+      </p>
+      <a href="https://github.com/lefkovitzj"
+         target="_blank"
+         rel="noopener"
+         class="mt-4 inline-flex rounded-md border border-teal-500/40 bg-teal-500/10 px-3 py-1.5 text-sm font-medium text-teal-300 hover:border-teal-400 hover:text-teal-200">
+        View GitHub Profile →
+      </a>
+    </article>
+
+    <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+      <h3 class="text-base font-semibold text-teal-300">Quick Resources</h3>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li>
+          <a href="/about#how-it-works" class="text-slate-200 hover:text-teal-300">
+            How it Works →
+          </a>
+        </li>
+        <li>
+          <a href="/contribute#contribution-guide" class="text-slate-200 hover:text-teal-300">
+            Contribution Guide →
+          </a>
+        </li>
+      </ul>
+    </article>
+  </div>
+</section>
+{% endblock %}
