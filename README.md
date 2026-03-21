@@ -196,6 +196,10 @@ Joseph Lefkovitz
 GitHub: [@lefkovitzj](https://github.com/lefkovitzj)  
 Project Link: https://github.com/lefkovitzj/WDW-Wayfinder
 
+## Disclaimer
+
+This project is not affiliated with, authorized, or endorsed by The Walt Disney Company. All Disney-related names and trademarks are property of their respective owners.
+
 ---
 
 ## Acknowledgments
