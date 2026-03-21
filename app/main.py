@@ -9,6 +9,7 @@ Last Modified: 1/10/2026
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
 
 # Local imports
 from app.core.config import settings
@@ -28,6 +29,20 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title=settings.app_name,
     lifespan=lifespan
+)
+
+# Setup for CORS.
+origins = [
+    settings.PRODUCTION_URL,
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows GET, POST, etc.
+    allow_headers=["*"],  # Allows all headers (like Content-Type)
 )
 
 # Add application routes.

@@ -17,6 +17,7 @@ class Settings(BaseSettings):
     GA4_MEASUREMENT_ID: str = ""
     DATABASE_URL: str = ""
     ENABLE_ANALYTICS: bool = False
+    PRODUCTION_URL: str = ""
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
 settings = Settings()
