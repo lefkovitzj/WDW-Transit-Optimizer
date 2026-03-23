@@ -9,6 +9,9 @@
   <h3 align="center">WDW Wayfinder</h3>
 
   <p align="center">
+   <a href="https://wdw-wayfinder.lefkovitzj.com/"><strong>Live Demo »</strong></a>
+    <br />
+    <br />
    <img src="app/static/images/social-preview.png" alt="WDW Wayfinder Demo" width="600"/>
    <br><br>
     A FastAPI web app that computes optimized Walt Disney World transit itineraries using Dijkstra + Held-Karp TSP.
