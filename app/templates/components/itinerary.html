@@ -1,9 +1,9 @@
-<div class="card bg-base-100 shadow-2xl border-t-8 border-primary animate-fadeIn">
+<div class="card bg-base-100 shadow-2xl border-primary animate-fadeIn">
     <div class="card-body">
         <div class="flex justify-between items-center mb-6">
             <h2 class="card-title text-3xl font-black text-primary">Your Disney Wayfinder</h2>
-            <button onclick="window.print()" class="btn btn-ghost btn-sm">
-                🖨️ Print Path
+            <button onclick="window.print()" class="btn bg-wdw-teal rounded-lg px-4 py-2.5 text-sm font-semibold text-white hover:brightness-110 btn-sm print:hidden">
+                Print Path
             </button>
         </div>
 
@@ -12,6 +12,7 @@
                 <div class="stat-title text-primary-content opacity-70">Total Travel Time</div>
                 <div class="stat-value text-4xl">{{ result.total_time }} min</div>
                 <div class="stat-desc text-primary-content opacity-70">Optimized via {{ result.itinerary|length }} steps</div>
+                <div class="hidden print:block">Created on <a href="{{request.app.state.production_url}}" target="_blank">{{request.app.state.production_url}}</a></div>
             </div>
         </div>
 
@@ -19,11 +20,6 @@
             {% for node, mode in result.itinerary %}
             <li>
                 {% if not loop.first %}<hr class="bg-primary"/>{% endif %}
-                <div class="timeline-middle">
-                    <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">
-                        {{ loop.index }}
-                    </div>
-                </div>
                 <div class="timeline-end mb-10 ml-4">
                     <time class="font-mono italic text-sm opacity-50">Step {{ loop.index }}</time>
                     <div class="text-xl font-black">
@@ -48,7 +44,7 @@
             {% endfor %}
         </ul>
 
-        <div class="alert alert-info mt-6">
+        <div class="alert alert-info mt-6 flex gap-2 items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             <span>Times are estimates. Real-world transit may vary based on weather or crowds!</span>
         </div>
