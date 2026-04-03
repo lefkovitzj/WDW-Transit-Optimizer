@@ -14,13 +14,50 @@
 
   /* show spinner only when we explicitly toggle it */
   .spinner-active { display: flex !important; }
+  
+  @media print {
+    body {
+      background-color: white !important;
+      color: black !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    #planner {
+      display: block !important;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+    
+    #itinerary-result {
+      width: 100% !important;
+      color: black !important;
+    }
+    #itinerary-result {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-left: 0 !important;
+      padding: 0 !important;
+    }
+
+    #itinerary-result > div {
+      border: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
+      color: black !important;
+      padding: 0 !important;
+    }
+    
+    h1, h2, h3, p, span {
+      color: black !important;
+    }
+  }
 </style>
 {% endblock %}
 
 {% block content %}
 <div class="space-y-6">
   <!-- Hero -->
-  <section class="rounded-2xl border border-slate-800 bg-gradient-to-r from-wdw-navy via-wdw-navy2 to-wdw-teal p-6 shadow-soft">
+  <section class="print:hidden rounded-2xl border border-slate-800 bg-gradient-to-r from-wdw-navy via-wdw-navy2 to-wdw-teal p-6 shadow-soft">
     <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
       <div>
         <p class="text-xs font-semibold uppercase tracking-wider text-white/80">Walt Disney World Transit Optimization</p>
@@ -38,7 +75,7 @@
   </section>
 
   <div id="planner" class="scroll-mt-20 grid grid-cols-1 gap-6 xl:grid-cols-3">
-    <section class="relative z-30 xl:col-span-1 rounded-xl border border-slate-800 bg-slate-900 shadow-soft">
+    <section class="print:hidden relative z-30 xl:col-span-1 rounded-xl border border-slate-800 bg-slate-900 shadow-soft">
       <header class="border-b border-slate-800 px-6 py-4">
         <h2 class="text-xl font-semibold text-slate-100">Plan Your Journey</h2>
         <p class="mt-1 text-sm text-slate-400">Build an optimized multi-stop itinerary across Walt Disney World.</p>
@@ -99,7 +136,7 @@
     </section>
 
     <section id="itinerary-result" class="relative z-0 xl:col-span-2 space-y-4">
-      <div class="rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
+      <div class="print:hidden rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-soft">
         <div class="flex items-start gap-3">
           <div class="mt-0.5 h-5 w-5 rounded-full bg-wdw-navy2 text-center text-xs font-bold leading-5 text-white">i</div>
           <div>
@@ -119,7 +156,7 @@
   </div>
 
   <!-- About / Contribution / Contact -->
-  <section class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+  <section class="print:hidden grid grid-cols-1 gap-4 lg:grid-cols-3">
     <article class="rounded-xl border border-slate-800 bg-slate-900 p-5 shadow-soft">
       <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-300">About</h3>
       <p class="mt-2 text-sm text-slate-400">
