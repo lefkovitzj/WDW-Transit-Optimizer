@@ -64,11 +64,13 @@ def log_search(origin: str, dest: str, stops: List[str]):
 @router.get("/", response_class=HTMLResponse)
 async def home(request: Request):
     """ Home page route."""
-    return templates.TemplateResponse("index.html", {
-        "request": request,
-        "locations": request.app.state.graph.valid_stops,
-        "settings": settings
-    })
+    return templates.TemplateResponse(request=request,
+                                      name="index.html",
+                                      context={
+                                        "request": request,
+                                        "locations": request.app.state.graph.valid_stops,
+                                        "settings": settings
+                                    })
 
 @router.get("/ping")
 async def ping():
@@ -82,11 +84,14 @@ async def search(request: Request, q: str = Form(""), graph=Depends(get_graph)):
         if q.lower() in name.lower() and loc_id.endswith("_MAIN")
     }
     print(f"Search query: {q}, Matches found: {len(matches)}")
-    return templates.TemplateResponse("components/search_results.html", {
-        "request": request,
-        "query": q,
-        "matches": matches
-    })
+    return templates.TemplateResponse(
+        request=request,
+        name="components/search_results.html", 
+        context={
+            "request": request,
+            "query": q,
+            "matches": matches
+        })
 
 @router.post("/plan", response_class=HTMLResponse)
 async def plan_route(
@@ -112,36 +117,45 @@ async def plan_route(
     inverted_display_names = {v: k for k, v in graph.display_names.items()}
     if request.headers.get("HX-Request"):
         print(inverted_display_names)
-        return templates.TemplateResponse("components/itinerary.html", {
+        return templates.TemplateResponse(
+            request=request,
+            name="components/itinerary.html",
+            context={
             "request": request,
             "result": result,
             "display_names": inverted_display_names
         })
 
     # Fallback for full page reload
-    return templates.TemplateResponse("pages/index.html", {
-        "request": request,
-        "locations": inverted_display_names,
-        "result": result
-    })
+    return templates.TemplateResponse(
+        request=request,
+        name="pages/index.html",
+        context={
+            "request": request,
+            "locations": inverted_display_names,
+            "result": result
+        })
 
 @router.get("/about", response_class=HTMLResponse)
 async def about_page(request: Request):
     return templates.TemplateResponse(
-        "about.html",
-        {"request": request},
+        request=request,
+        name = "about.html",
+        context={"request": request}
     )
 
 @router.get("/contribute", response_class=HTMLResponse)
 async def contribute_page(request: Request):
     return templates.TemplateResponse(
-        "contribute.html",
-        {"request": request},
+        request=request,
+        name="contribute.html",
+        context={"request": request}
     )
 
 @router.get("/contact", response_class=HTMLResponse)
 async def contact_page(request: Request):
     return templates.TemplateResponse(
-        "contact.html",
-        {"request": request},
+        request=request,
+        name="contact.html",
+        context={"request": request}
     )
